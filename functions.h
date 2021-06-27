@@ -9,6 +9,8 @@ void pyramid();
 
 void factorial();
 
+void reverse();
+
 void grade_equi();
 
 void temper();

@@ -39,3 +39,18 @@ void factorial(){
 	}std::cout<<std::endl<<"The factorial of Num is: "<<f;
 	
 }
+
+void reverse(){
+    int rev, n = 0, rem;
+
+    std::cout << "Please enter a number you want to reverse: ";
+    std::cin >> rev;
+
+    while (rev != 0)
+    {
+          n = n * 10;
+          n = n + rev % 10;
+          rev = rev / 10;
+    }
+    std::cout << "\n\t\t\t\t\tThe reverse number is: "  << n;
+}

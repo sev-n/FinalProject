@@ -34,9 +34,9 @@ int main(){
 			cout<<"\n\t\t\t\t\tPROGRAMS IN LOOPING SECTION\n";
 			cout<<"\n\t\t===========================================================================\n\n";
 			
-			cout<<"\t[A] ASTERISK PYRAMID\t\t[B] SUM AND FACTORIAL\t\t[C] VOTER'S REGISTRATION\n\n";
+			cout<<"\t[A] ASTERISK PYRAMID\t\t[B] SUM AND FACTORIAL\t\t[C] VOTER'S REGISTRATION\n\n\t[D] REVERSE A NUMBER\n\n";
 			
-			cout<<"Enter letter (A/B/C): ";
+			cout<<"Enter letter (A/B/C/D): ";
 			cin>>letter_con;
 			if(letter_con == 'a' || letter_con == 'A'){
 				
@@ -80,6 +80,37 @@ int main(){
 				switch(conc){
 					case 1:
 						goto sumfact;
+						break;
+					case 2:
+						system("PAUSE");
+						system("CLS");
+						goto piliLoop;
+						break;
+					case 3:
+						system("PAUSE");
+						system("CLS");
+						menu(name, course);
+						goto loop;
+						break;
+					case 4:
+						cout<<"\nThankyou For using the program";
+						exit(0);
+						break;
+					default:
+						cout<<"\n1-4 only";
+						break;
+				}
+			}else if(letter_con == 'd' || letter_con == 'D'){
+				
+				rev: // <--- CREATE LABEL
+				reverse(); // <--- FUNCTION OF REVERSE
+				cout<<"\n\n[1] TRY AGAIN?\t\t[2] TRY ANOTHER PROGRAM?\t\t[3] BACK TO MAIN MENU\t\t[4] QUIT";
+				cout<<"\nPick a number: ";
+				cin>>conc;
+				
+				switch(conc){
+					case 1:
+						goto rev;
 						break;
 					case 2:
 						system("PAUSE");
