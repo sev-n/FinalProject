@@ -2,7 +2,6 @@
 #include <string>
 #include <stdlib.h>
 #include "functions.h"
-//#include "vote.cpp"
 using namespace std;
 
 int main(){
