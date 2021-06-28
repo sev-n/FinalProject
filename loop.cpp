@@ -18,10 +18,10 @@ void pyramid(){
 	}
 }
 
-void factorial(){
+void sumfac(){
 	int num, i, sum = 0, f = 1, sumSquared = 0;
 	
-	std::cout<<"\n\t\t\t***SUM OF N | SUM OF THE SQUARED OF N | FACTORIAL OF N***";
+	std::cout<<"\n\t\t\t*** SUM OF N | SUM OF THE SQUARED OF N | FACTORIAL OF N ***";
 	std::cout<<"\n\nEnter a number: ";
 	std::cin>>num;
 	

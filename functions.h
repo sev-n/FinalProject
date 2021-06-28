@@ -5,10 +5,11 @@
 #include "conditional.cpp"
 #include "mainMenu.cpp"
 #include "array.cpp"
+#include "operator.cpp"
 
 void pyramid();
 
-void factorial();
+void sumfac();
 
 void reverse();
 
@@ -27,6 +28,12 @@ void FacArr();
 void sumofN();
 
 void posNneg();
+
+void arithmetic();
+
+void relational();
+
+void logical();
 
 
 #endif

@@ -72,7 +72,7 @@ int main(){
 			}else if(letter_con == 'b' || letter_con == 'B'){
 				
 				sumfact: // <--- GOTO SUMFACT
-				factorial(); // <--- FUNCTION OF FACTORIAL
+				sumfac(); // <--- FUNCTION
 				cout<<"\n\n[1] TRY AGAIN?\t\t[2] TRY ANOTHER PROGRAM?\t\t[3] BACK TO MAIN MENU\t\t[4] QUIT";
 				cout<<"\nPick a number: ";
 				cin>>conc;
@@ -379,13 +379,110 @@ int main(){
 					}
 				}
 		case 4:
-			cout<<"operators";
-			break;
-		default:
-			cout<<"\t\t\t\t\tEnter only 1-4";
-			break;
+			piliOpe: // <---- CREATE LABEL FOR OPERATOR
+			cout<<"\t\t===========================================================================\n";
+			cout<<"\t\t\t\t\t--YOU CHOSE OPERATOR--\n";
+			cout<<"\n\t\t\t\t    PROGRAMS WITH OPERATORS \n";
+			cout<<"\n\t\t===========================================================================\n\n";
+			cout<<"\t[A] ARITHMETIC OPERATORS\t\t[B] RELATIONAL OPERATORS\t\t[C] LOGICAL OPERATORS\n\n"<< endl;
+			
+			cout<<"Enter letter (A/B/C): ";
+			cin>>letter_con;
+			
+			if(letter_con == 'A' || letter_con == 'a'){
+				
+				arith: // <--- CREATE LABEL FOR FIRST PROBELM IN OPERATOR
+				arithmetic(); // <--- FUNCTION OF FIRST PROBLEM
+				cout<<"\n\n[1] TRY AGAIN?\t\t[2] TRY ANOTHER PROGRAM?\t\t[3] BACK TO MAIN MENU\t\t[4] QUIT";
+				cout<<"\nPick a number: ";
+				cin>>conc;
+				
+				switch(conc){
+					case 1:
+						goto arith;
+						break;
+					case 2:
+						system("PAUSE");
+						system("CLS");
+						goto piliOpe;
+						break;
+					case 3:
+						system("PAUSE");
+						system("CLS");
+						menu(name, course);
+						goto loop;
+						break;
+					case 4:
+						cout<<"\nThankyou For using the program";
+						exit(0);
+						break;
+					default:
+						cout<<"\n1-4 only";
+						break;
+					}
+			}else if(letter_con == 'B' || letter_con == 'b'){
+				
+				relational: // <--- CREATE LABEL 
+				relational(); // <--- FUNCTION OF SECOND PROBLEM
+				cout<<"\n\n[1] TRY AGAIN?\t\t[2] TRY ANOTHER PROGRAM?\t\t[3] BACK TO MAIN MENU\t\t[4] QUIT";
+				cout<<"\nPick a number: ";
+				cin>>conc;
+				
+				switch(conc){
+					case 1:
+						goto relational;
+						break;
+					case 2:
+						system("PAUSE");
+						system("CLS");
+						goto piliOpe;
+						break;
+					case 3:
+						system("PAUSE");
+						system("CLS");
+						menu(name, course);
+						goto loop;
+						break;
+					case 4:
+						cout<<"\nThankyou For using the program";
+						exit(0);
+						break;
+					default:
+						cout<<"\n1-4 only";
+						break;
+					}
+				}else if(letter_con == 'C' || letter_con == 'c'){
+				
+				logical: // <--- CREATE LABEL 
+				logical(); // <--- FUNCTION OF THIRD PROBLEM
+				cout<<"\n\n[1] TRY AGAIN?\t\t[2] TRY ANOTHER PROGRAM?\t\t[3] BACK TO MAIN MENU\t\t[4] QUIT";
+				cout<<"\nPick a number: ";
+				cin>>conc;
+				
+				switch(conc){
+					case 1:
+						goto logical;
+						break;
+					case 2:
+						system("PAUSE");
+						system("CLS");
+						goto piliOpe;
+						break;
+					case 3:
+						system("PAUSE");
+						system("CLS");
+						menu(name, course);
+						goto loop;
+						break;
+					case 4:
+						cout<<"\nThankyou For using the program";
+						exit(0);
+						break;
+					default:
+						cout<<"\n1-4 only";
+						break;
+					}
+				}
 	}
-	
-	
 	return 0;
 }
