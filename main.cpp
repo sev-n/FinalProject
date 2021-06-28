@@ -279,7 +279,7 @@ int main(){
 			cout<<"\t\t\t\t\t--YOU CHOSE ARRAY--\n";
 			cout<<"\n\t\t\t\t    PROGRAMS IN ARRAY USING ONE-DIMENSION\n";
 			cout<<"\n\t\t===========================================================================\n\n";
-			cout<<"\t[A] FACTORIAL OF NUMBER\t\t[B] SUM OF N"<< endl;
+			cout<<"\t[A] FACTORIAL OF NUMBER\t\t[B] SUM OF N\t\t[C] IDENTIFY IF POSTIVE OR NEGATIVE\n\n"<< endl;
 			
 			cout<<"Enter letter (A/B/C/D): ";
 			cin>>letter_con;
@@ -346,9 +346,38 @@ int main(){
 						cout<<"\n1-4 only";
 						break;
 					}
-				}else{
-				cout<<"\nA/B/C only!!";
-			}
+				}else if(letter_con == 'C' || letter_con == 'c'){
+				
+				arrposNneg: // <--- CREATE LABEL 
+				posNneg(); // <--- FUNCTION OF POSTIVE OF NEGATIVE NUMBERS OF AN ARRAY
+				cout<<"\n\n[1] TRY AGAIN?\t\t[2] TRY ANOTHER PROGRAM?\t\t[3] BACK TO MAIN MENU\t\t[4] QUIT";
+				cout<<"\nPick a number: ";
+				cin>>conc;
+				
+				switch(conc){
+					case 1:
+						goto arrposNneg;
+						break;
+					case 2:
+						system("PAUSE");
+						system("CLS");
+						goto piliArr;
+						break;
+					case 3:
+						system("PAUSE");
+						system("CLS");
+						menu(name, course);
+						goto loop;
+						break;
+					case 4:
+						cout<<"\nThankyou For using the program";
+						exit(0);
+						break;
+					default:
+						cout<<"\n1-4 only";
+						break;
+					}
+				}
 		case 4:
 			cout<<"operators";
 			break;

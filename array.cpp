@@ -35,3 +35,21 @@ void sumofN(){
     for(int j = 0; j < number; j++) sum += array[j];
     cout << "The sum of N is: " << sum;
 }
+
+void posNneg(){
+    int number[5];
+
+    cout << "Enter a Five Number, Must be Integer otherwise \
+it will Terminate" << endl;
+
+    for(int i = 0; i < 5; i++) cin >> number[i];
+
+    cout << "Positive Number/s: ";
+    for(int j = 0; j < 5; j++){
+        if(number[j] >= 0) cout << " " <<number[j];
+    }
+    cout << "\nNegative Number/s: ";
+    for(int x = 0; x < 5; x++){
+        if(number[x] < 0) cout << " " << number[x];
+    }
+}

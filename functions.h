@@ -26,5 +26,7 @@ void FacArr();
 
 void sumofN();
 
+void posNneg();
+
 
 #endif
