@@ -24,5 +24,7 @@ void menu(string name, string course);
 
 void FacArr();
 
+void sumofN();
+
 
 #endif

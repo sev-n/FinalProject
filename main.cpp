@@ -279,7 +279,7 @@ int main(){
 			cout<<"\t\t\t\t\t--YOU CHOSE ARRAY--\n";
 			cout<<"\n\t\t\t\t    PROGRAMS IN ARRAY USING ONE-DIMENSION\n";
 			cout<<"\n\t\t===========================================================================\n\n";
-			cout<<"\t[A] FACTORIAL OF NUMBER"<< endl;
+			cout<<"\t[A] FACTORIAL OF NUMBER\t\t[B] SUM OF N"<< endl;
 			
 			cout<<"Enter letter (A/B/C/D): ";
 			cin>>letter_con;
@@ -287,7 +287,7 @@ int main(){
 			if(letter_con == 'A' || letter_con == 'a'){
 				
 				arrFac: // <--- CREATE LABEL FOR FIRST PROBELM IN ARRAY
-				FacArr(); // <--- FUNCTION OF GRADE EQUIVALENT
+				FacArr(); // <--- FUNCTION OF FACTORIAL OF AN ARRAY
 				cout<<"\n\n[1] TRY AGAIN?\t\t[2] TRY ANOTHER PROGRAM?\t\t[3] BACK TO MAIN MENU\t\t[4] QUIT";
 				cout<<"\nPick a number: ";
 				cin>>conc;
@@ -295,6 +295,37 @@ int main(){
 				switch(conc){
 					case 1:
 						goto arrFac;
+						break;
+					case 2:
+						system("PAUSE");
+						system("CLS");
+						goto piliArr;
+						break;
+					case 3:
+						system("PAUSE");
+						system("CLS");
+						menu(name, course);
+						goto loop;
+						break;
+					case 4:
+						cout<<"\nThankyou For using the program";
+						exit(0);
+						break;
+					default:
+						cout<<"\n1-4 only";
+						break;
+					}
+			}else if(letter_con == 'B' || letter_con == 'b'){
+				
+				arrSum: // <--- CREATE LABEL 
+				sumofN(); // <--- FUNCTION OF SUM OF AN ARRAY
+				cout<<"\n\n[1] TRY AGAIN?\t\t[2] TRY ANOTHER PROGRAM?\t\t[3] BACK TO MAIN MENU\t\t[4] QUIT";
+				cout<<"\nPick a number: ";
+				cin>>conc;
+				
+				switch(conc){
+					case 1:
+						goto arrSum;
 						break;
 					case 2:
 						system("PAUSE");
