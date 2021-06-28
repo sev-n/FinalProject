@@ -174,8 +174,7 @@ int main(){
 					default:
 						cout<<"\n1-4 only";
 						break;
-				}
-				
+				}	
 			}else if(letter_con == 'b' || letter_con == 'B'){
 				
 				tmprtr: // <---- goto temperature detector
@@ -275,8 +274,50 @@ int main(){
 			}
 			break; // <---- END OF CASE 2 CONDITIONAL
 		case 3:
-			cout<<"array";
-			break;
+			piliArr: // <---- CREATE LABEL FOR ARRAY
+			cout<<"\t\t===========================================================================\n";
+			cout<<"\t\t\t\t\t--YOU CHOSE ARRAY--\n";
+			cout<<"\n\t\t\t\t    PROGRAMS IN ARRAY USING ONE-DIMENSION\n";
+			cout<<"\n\t\t===========================================================================\n\n";
+			cout<<"\t[A] FACTORIAL OF NUMBER"<< endl;
+			
+			cout<<"Enter letter (A/B/C/D): ";
+			cin>>letter_con;
+			
+			if(letter_con == 'A' || letter_con == 'a'){
+				
+				arrFac: // <--- CREATE LABEL FOR FIRST PROBELM IN ARRAY
+				FacArr(); // <--- FUNCTION OF GRADE EQUIVALENT
+				cout<<"\n\n[1] TRY AGAIN?\t\t[2] TRY ANOTHER PROGRAM?\t\t[3] BACK TO MAIN MENU\t\t[4] QUIT";
+				cout<<"\nPick a number: ";
+				cin>>conc;
+				
+				switch(conc){
+					case 1:
+						goto arrFac;
+						break;
+					case 2:
+						system("PAUSE");
+						system("CLS");
+						goto piliArr;
+						break;
+					case 3:
+						system("PAUSE");
+						system("CLS");
+						menu(name, course);
+						goto loop;
+						break;
+					case 4:
+						cout<<"\nThankyou For using the program";
+						exit(0);
+						break;
+					default:
+						cout<<"\n1-4 only";
+						break;
+					}
+				}else{
+				cout<<"\nA/B/C only!!";
+			}
 		case 4:
 			cout<<"operators";
 			break;

@@ -4,6 +4,7 @@
 #include "loop.cpp"
 #include "conditional.cpp"
 #include "mainMenu.cpp"
+#include "array.cpp"
 
 void pyramid();
 
@@ -20,6 +21,8 @@ void work_salary();
 void vote_reg();
 
 void menu(string name, string course);
+
+void FacArr();
 
 
 #endif
