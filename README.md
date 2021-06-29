@@ -2,7 +2,7 @@
 
 
 
-Requirements for Final Term on College
+Requirement for Final Term on College
 
 For Educational Purposes Only
 
