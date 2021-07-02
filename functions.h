@@ -13,6 +13,12 @@ void sumfac();
 
 void reverse();
 
+void count();
+
+void fibo_terms();
+
+void multi_table();
+
 void grade_equi();
 
 void temper();
@@ -20,6 +26,10 @@ void temper();
 void work_salary();
 
 void vote_reg();
+
+void calcu();
+
+void vowel();
 
 void menu(string name, string course);
 
@@ -29,11 +39,23 @@ void sumofN();
 
 void posNneg();
 
+void low_high();
+
+void occur_n();
+
+void find_name();
+
 void arithmetic();
 
 void relational();
 
 void logical();
+
+void convert();
+
+void conv_unit();
+
+void conv_calendar_date();
 
 
 #endif

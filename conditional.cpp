@@ -82,3 +82,71 @@ void vote_reg(){
 		std::cout<<"\nYou are QUALIFIED to vote";
 	}
 }
+void calcu(){
+	char op;
+    double num, num1;
+
+    std::cout << "\n\t\t\t\t--> SIMPLE CALCULATOR <--\n" << std::endl;
+
+    std::cout << "\t\tEnter an operator (+, -, *, /): ";
+    std::cin >> op;
+    std::cout << "\n\t\tEnter two numbers separated by space: ";
+    std::cin >> num >> num1;
+
+    switch (op) {
+        case '+':
+            std::cout << "\t\t\tYou choose addtion: " << num << " + " << num1 << " = " << num + num1;
+            break;
+        case '-':
+            std::cout << "\t\t\tYou choose subtraction: " << num << " - " << num1 << " = " << num - num1;
+            break;
+        case '*':
+            std::cout << "\t\t\tYou choose multiplication: " << num << " * " << num1 << " = " << num * num1;
+            break;
+        case '/':
+            std::cout << "\t\t\tYou choose divition: " << num << " / " << num1 << " = " << num / num1;
+            break;
+        default:
+            std::cout << "\t\t\tInvalid Input";
+            break;
+    }
+}
+
+void vowel(){
+	char ch;
+
+	std::cout << "\n\t\t\t\t--> INDENTIFY IF IT'S VOWEL OR NOT <--\n" << std::endl;
+
+	std::cout << "\t\tEnter the Letter: ";
+   	std::cin >> ch;
+
+	switch (ch) {
+		case 'A':
+		case 'a':
+			std::cout << "\n\t\t\tYour character is A and a Vowel\n";
+			break;
+
+		case 'E':
+		case 'e':
+			std::cout << "\n\t\t\tYour character is E and a Vowel\n";
+			break;
+
+		case 'I':
+		case 'i':
+			std::cout << "\n\t\t\tYour character is I and a Vowel\n";
+			break;
+
+		case 'O':
+		case 'o':
+			std::cout << "\nt\t\tYour character is O and a Vowel\n";
+			break;
+
+		case 'U':
+		case 'u':
+			std::cout << "\n\t\t\tYour character is U and a Vowel\n";
+			break;
+
+		default: std::cout << "\n\t\t\tThe value you entered is not a vowel or make sure it must valid\n";
+			break;
+   }
+}

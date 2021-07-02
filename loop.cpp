@@ -54,3 +54,45 @@ void reverse(){
     }
     std::cout << "\n\t\t\t\t\tThe reverse number is: "  << n;
 }
+
+void multi_table(){
+	int number, product;
+    std::cout << "\n\t\t\t\t--> PRINT MULTIPLICATION TABLE OF A GIVEN NUMBER <--\n" << std::endl;
+
+    std::cout << "\tEnter a number: ";
+    std::cin >> number;
+
+    for(int i = 1; i < 11; i++){
+        product = number * i;
+        std::cout << "\t" <<product << " ";
+    }
+}
+void count(){
+	int number, count = 0;
+    std::cout << "\n\t\t\t\t--> COUNT THE TOTAL NUMBER OF DIGITS IN A NUMBER <--\n" << std::endl;
+
+    std::cout << "\tEnter a number: ";
+    std::cin >> number;
+
+     while(number != 0){
+        count++;
+        number /= 10;
+    }
+    std::cout << "\t\t" << "Total digits are: " << count;
+}
+void fibo_terms(){
+	int n, first_term = 0, second_term = 1, count = 0;
+
+    std::cout << "\n\t\t\t\t--> DISPLAY FIBONACCI SERIES UP TO N terms <--\n" << std::endl;
+
+    std::cout << "\tEnter a number of terms: ";
+    std::cin >> n;
+
+    while(count < n){
+        std::cout << "\t" <<first_term << " ";
+        int temp = first_term + second_term;
+        first_term = second_term; // update
+        second_term = temp;
+        count += 1;
+    }
+}
