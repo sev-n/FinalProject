@@ -6,6 +6,7 @@
 #include "mainMenu.cpp"
 #include "array.cpp"
 #include "operator.cpp"
+#include "color.hpp" // https://github.com/imfl/color-console
 
 void pyramid();
 
