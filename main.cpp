@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <stdlib.h>
-#include "functions.h"
+#include "src/functions.h"
 using namespace std;
 
 int main(){
