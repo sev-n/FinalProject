@@ -1,6 +1,8 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
+
+// include all cpp files
 #include "loop.cpp"
 #include "conditional.cpp"
 #include "mainMenu.cpp"

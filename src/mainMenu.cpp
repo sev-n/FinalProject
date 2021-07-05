@@ -1,4 +1,4 @@
-#include "color.hpp"
+#include "color.hpp" // text color
 #include <stdlib.h>
 #include <iostream>
 #include <string>
@@ -25,7 +25,7 @@ void menu(string name, string course){
     cout<<"\t||\t\t\t     " << dye::yellow("[3] ") << "ARRAY      |    " << dye::yellow("[4] ") << "OPERATORS \t\t\t\t ||\n";
     cout<<"\t||                                          |                                            ||\n";
     cout<<"\t||                                                                                       ||\n";
-    cout<<"\t||                                                                                       ||\n";
+    cout<<"\t||                                   [A] About us                                        ||\n";
     cout<<"\t||                                                                                       ||\n";
     cout<<"\t||---------------------------------------------------------------------------------------||\n";
     cout<<"\t===========================================================================================";

@@ -21,7 +21,6 @@ void FacArr(){
     } else cout << "TO COMPUTE FACTORIAL, \
 MUST BE INTEGER OR MORE THAN/EQUAL TO 1";
 }
-
 void sumofN(){
     int number, sum = 0;
 
@@ -36,7 +35,6 @@ void sumofN(){
     for(int j = 0; j < number; j++) sum += array[j];
     cout << "The sum of N is: " << sum;
 }
-
 void posNneg(){
     int number[5];
 

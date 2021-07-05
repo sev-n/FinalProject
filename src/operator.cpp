@@ -20,7 +20,6 @@ void arithmetic(){
     cout << "\tAddition of x + y = " << (x + y) << endl;
     cout << "\tSubtraction of x - y = " << (x - y) << endl;
 }
-
 void relational(){
     int x, y;
 
@@ -43,7 +42,6 @@ void relational(){
     if(x == y) cout << '\t' << x << " is equal to " << y << endl;
     if(x != y) cout << '\t' << x << " is not qual to " << y << endl;
 }
-
 void logical(){
     int x, y;
 
@@ -63,7 +61,6 @@ void logical(){
     if(!(x < y) || y > x) 
         cout << "\t!(x < y) || y < x  --> return the opossite if true then FALSE, if false then TRUE" << endl;
 }
-
 void convert(){
     float php, usd = 0.021, jpy = 2.25;
 

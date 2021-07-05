@@ -17,7 +17,6 @@ void pyramid(){
 		std::cout<<"\n";
 	}
 }
-
 void sumfac(){
 	int num, i, sum = 0, f = 1, sumSquared = 0;
 	
@@ -28,8 +27,7 @@ void sumfac(){
 	for(i = 0; i <= num; i++){
 		sum = sum + i;
 	}std::cout<<std::endl<<"The sum of Num is: "<<sum;
-		
-		
+			
 	for(i = 0; i <= num; i++){
 		sumSquared += (i*i);
 	}std::cout<<std::endl<<"The sum of the squared of Num is: "<<sumSquared;

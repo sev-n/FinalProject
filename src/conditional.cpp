@@ -27,7 +27,6 @@ void grade_equi(){
 	}
 	
 }
-
 void temper(){
 	
 	float temp;
@@ -47,7 +46,6 @@ void temper(){
 	}
 	
 }
-
 void work_salary(){
 	float hours, salary;
 	
