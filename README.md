@@ -6,19 +6,6 @@ Requirement for Final Term on College
 
 - Lei Fu 2018       <https://github.com/imfl/color-console>
 
-## Contributors 
-
-- Nerwin Panis      <https://www.facebook.com/nerwin.panis.9>
-- Denniel S. Lurion     <https://www.facebook.com/niel.sevilla.11/>
-- John Henry Angas      <https://www.facebook.com/angasjanhenry>
-- Vardeleon Melvin      <https://www.facebook.com/Bobo.ka1455>
-- Cedrick John Guevarra     <https://www.facebook.com/KillingInDaNameOf>
-- Kristinejoyce Beato       <https://www.facebook.com/kristinejoycebeato>
-- Kyle Louise Ferrer Galanta        <https://www.facebook.com/kylelouise.galanta.18>
-- Jomari De Guzman      <https://www.facebook.com/JTDGaming24>
-- Harold Son Enriquez       <https://www.facebook.com/haroldson.enriquez>
-- Milbert Andrew Sigaan     <https://www.facebook.com/milbert.shivan>
-
 ---
 
 ## Setting up for the Dev-c++ users
@@ -31,19 +18,19 @@ Goto Tools > Compiler Options..
 
 **Second**
 
-Settings
+Goto Settings
 
 <img src="images\second_step.png">
 
 **Third**
 
-Code Generation
+Goto Code Generation
 
 <img src="images\third_step.png">
 
 **Fourth**
 
-Language standard (-std) > Right side corner > choose ISO C++ 11
+Goto Language standard (-std) > Right side corner > choose ISO C++ 11
 
 <img src="images\fourth_step.png">
 
@@ -51,9 +38,24 @@ Language standard (-std) > Right side corner > choose ISO C++ 11
 
 **Last**
 
-Click Ok
+Then click Ok
 
 <img src="images\last_step.png">
+
+---
+
+## Contributors 
+
+- Nerwin Panis      <https://www.facebook.com/nerwin.panis.9>
+- Denniel S. Lurion     <https://www.facebook.com/niel.sevilla.11/>
+- John Henry Angas      <https://www.facebook.com/angasjanhenry>
+- Vardeleon Melvin      <https://www.facebook.com/Bobo.ka1455>
+- Cedrick John Guevarra     <https://www.facebook.com/KillingInDaNameOf>
+- Kristinejoyce Beato       <https://www.facebook.com/kristinejoycebeato>
+- Kyle Louise Ferrer Galanta        <https://www.facebook.com/kylelouise.galanta.18>
+- Jomari De Guzman      <https://www.facebook.com/JTDGaming24>
+- Harold Son Enriquez       <https://www.facebook.com/haroldson.enriquez>
+- Milbert Andrew Sigaan     <https://www.facebook.com/milbert.shivan>
 
 
 
