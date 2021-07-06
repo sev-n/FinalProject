@@ -24,7 +24,9 @@ Requirement for Final Term on College
 ## Setting up for the Dev-c++ users
 
 **First**
+
 Goto Tools > Compiler Options..
+
 <img src="images\first_step.png">
 
 
