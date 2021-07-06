@@ -101,7 +101,7 @@ int main(){
 						cout<<"\n1-4 only";
 						break;
 				}
-			}else if(letter_con == 'd' || letter_con == 'D'){
+			}else if(letter_con == 'c' || letter_con == 'C'){
 				
 				rev: // <--- CREATE LABEL
 				reverse(); // <--- FUNCTION OF REVERSE
@@ -112,6 +112,99 @@ int main(){
 				switch(conc){
 					case 1:
 						goto rev;
+						break;
+					case 2:
+						system("PAUSE");
+						system("CLS");
+						goto piliLoop;
+						break;
+					case 3:
+						system("PAUSE");
+						system("CLS");
+						menu(name, course);
+						goto loop;
+						break;
+					case 4:
+						cout<<"\nThankyou For using the program";
+						exit(0);
+						break;
+					default:
+						cout<<"\n1-4 only";
+						break;
+				}
+			}else if(letter_con == 'd' || letter_con == 'D'){
+				
+				multiTable: // <--- CREATE LABEL
+				multi_table(); // <--- FUNCTION OF MultiTable
+				cout<<"\n\n[1] TRY AGAIN?\t\t[2] TRY ANOTHER PROGRAM?\t\t[3] BACK TO MAIN MENU\t\t[4] QUIT";
+				cout<<"\nPick a number: ";
+				cin>>conc;
+				
+				switch(conc){
+					case 1:
+						goto multiTable;
+						break;
+					case 2:
+						system("PAUSE");
+						system("CLS");
+						goto piliLoop;
+						break;
+					case 3:
+						system("PAUSE");
+						system("CLS");
+						menu(name, course);
+						goto loop;
+						break;
+					case 4:
+						cout<<"\nThankyou For using the program";
+						exit(0);
+						break;
+					default:
+						cout<<"\n1-4 only";
+						break;
+				}
+			}else if(letter_con == 'e' || letter_con == 'E'){
+				
+				count_digit: // <--- CREATE LABEL
+				count(); // <--- FUNCTION OF COUNT
+				cout<<"\n\n[1] TRY AGAIN?\t\t[2] TRY ANOTHER PROGRAM?\t\t[3] BACK TO MAIN MENU\t\t[4] QUIT";
+				cout<<"\nPick a number: ";
+				cin>>conc;
+				
+				switch(conc){
+					case 1:
+						goto count_digit;
+						break;
+					case 2:
+						system("PAUSE");
+						system("CLS");
+						goto piliLoop;
+						break;
+					case 3:
+						system("PAUSE");
+						system("CLS");
+						menu(name, course);
+						goto loop;
+						break;
+					case 4:
+						cout<<"\nThankyou For using the program";
+						exit(0);
+						break;
+					default:
+						cout<<"\n1-4 only";
+						break;
+				}
+			}else if(letter_con == 'f' || letter_con == 'F'){
+				
+				fibo: // <--- CREATE LABEL
+				fibo_terms(); // <--- FUNCTION OF FIBONACCI
+				cout<<"\n\n[1] TRY AGAIN?\t\t[2] TRY ANOTHER PROGRAM?\t\t[3] BACK TO MAIN MENU\t\t[4] QUIT";
+				cout<<"\nPick a number: ";
+				cin>>conc;
+				
+				switch(conc){
+					case 1:
+						goto fibo;
 						break;
 					case 2:
 						system("PAUSE");
@@ -219,6 +312,99 @@ int main(){
 				switch(conc){
 					case 1:
 						goto weeklySalary;
+						break;
+					case 2:
+						system("PAUSE");
+						system("CLS");
+						goto piliCon;
+						break;
+					case 3:
+						system("PAUSE");
+						system("CLS");
+						menu(name, course);
+						goto loop;
+						break;
+					case 4:
+						cout<<"\nThankyou For using the program";
+						exit(0);
+						break;
+					default:
+						cout<<"\n1-4 only";
+						break;
+				}
+			}else if(letter_con == 'd' || letter_con == 'D'){
+	  			
+	  			vote: // <--- CREATE LABEL
+	  			vote_reg(); // <----- FUNCTION FOR VOTE
+	  			cout<<"\n\n[1] TRY AGAIN?\t\t[2] TRY ANOTHER PROGRAM?\t\t[3] BACK TO MAIN MENU\t\t[4] QUIT";
+				cout<<"\nPick a number: ";
+				cin>>conc;
+				
+				switch(conc){
+					case 1:
+						goto vote;
+						break;
+					case 2:
+						system("PAUSE");
+						system("CLS");
+						goto piliCon;
+						break;
+					case 3:
+						system("PAUSE");
+						system("CLS");
+						menu(name, course);
+						goto loop;
+						break;
+					case 4:
+						cout<<"\nThankyou For using the program";
+						exit(0);
+						break;
+					default:
+						cout<<"\n1-4 only";
+						break;
+				}
+			}else if(letter_con == 'e' || letter_con == 'E'){
+	  			
+	  			calcu: // <--- CREATE LABEL
+	  			calcu(); // <----- FUNCTION FOR CALCULATOR
+	  			cout<<"\n\n[1] TRY AGAIN?\t\t[2] TRY ANOTHER PROGRAM?\t\t[3] BACK TO MAIN MENU\t\t[4] QUIT";
+				cout<<"\nPick a number: ";
+				cin>>conc;
+				
+				switch(conc){
+					case 1:
+						goto calcu;
+						break;
+					case 2:
+						system("PAUSE");
+						system("CLS");
+						goto piliCon;
+						break;
+					case 3:
+						system("PAUSE");
+						system("CLS");
+						menu(name, course);
+						goto loop;
+						break;
+					case 4:
+						cout<<"\nThankyou For using the program";
+						exit(0);
+						break;
+					default:
+						cout<<"\n1-4 only";
+						break;
+				}
+			}else if(letter_con == 'f' || letter_con == 'F'){
+	  			
+	  			find_vowel: // <--- CREATE LABEL
+	  			vowel(); // <----- FUNCTION FOR VOWEL
+	  			cout<<"\n\n[1] TRY AGAIN?\t\t[2] TRY ANOTHER PROGRAM?\t\t[3] BACK TO MAIN MENU\t\t[4] QUIT";
+				cout<<"\nPick a number: ";
+				cin>>conc;
+				
+				switch(conc){
+					case 1:
+						goto find_vowel;
 						break;
 					case 2:
 						system("PAUSE");
@@ -376,6 +562,68 @@ int main(){
 						cout<<"\n1-4 only";
 						break;
 					}
+				}else if(letter_con == 'E' || letter_con == 'e'){
+				
+				arr_occur: // <--- CREATE LABEL 
+				occur_n(); // <--- FUNCTION OF OCCUR
+				cout<<"\n\n[1] TRY AGAIN?\t\t[2] TRY ANOTHER PROGRAM?\t\t[3] BACK TO MAIN MENU\t\t[4] QUIT";
+				cout<<"\nPick a number: ";
+				cin>>conc;
+				
+				switch(conc){
+					case 1:
+						goto arr_occur;
+						break;
+					case 2:
+						system("PAUSE");
+						system("CLS");
+						goto piliArr;
+						break;
+					case 3:
+						system("PAUSE");
+						system("CLS");
+						menu(name, course);
+						goto loop;
+						break;
+					case 4:
+						cout<<"\nThankyou For using the program";
+						exit(0);
+						break;
+					default:
+						cout<<"\n1-4 only";
+						break;
+					}
+				}else if(letter_con == 'F' || letter_con == 'f'){
+				
+				arr_find_name: // <--- CREATE LABEL 
+				find_name(); // <--- FUNCTION OF FIND
+				cout<<"\n\n[1] TRY AGAIN?\t\t[2] TRY ANOTHER PROGRAM?\t\t[3] BACK TO MAIN MENU\t\t[4] QUIT";
+				cout<<"\nPick a number: ";
+				cin>>conc;
+				
+				switch(conc){
+					case 1:
+						goto arr_find_name;
+						break;
+					case 2:
+						system("PAUSE");
+						system("CLS");
+						goto piliArr;
+						break;
+					case 3:
+						system("PAUSE");
+						system("CLS");
+						menu(name, course);
+						goto loop;
+						break;
+					case 4:
+						cout<<"\nThankyou For using the program";
+						exit(0);
+						break;
+					default:
+						cout<<"\n1-4 only";
+						break;
+					}
 				}
 		case 4:
 			piliOpe: // <---- CREATE LABEL FOR OPERATOR
@@ -513,7 +761,70 @@ int main(){
 						cout<<"\n1-4 only";
 						break;
 					}
+				}else if(letter_con == 'E' || letter_con == 'e'){
+				
+				conversion_unit: // <--- CREATE LABEL 
+				conv_unit(); // <--- FUNCTION OF FIFTH PROBLEM
+				cout<<"\n\n[1] TRY AGAIN?\t\t[2] TRY ANOTHER PROGRAM?\t\t[3] BACK TO MAIN MENU\t\t[4] QUIT";
+				cout<<"\nPick a number: ";
+				cin>>conc;
+				
+				switch(conc){
+					case 1:
+						goto conversion_unit;
+						break;
+					case 2:
+						system("PAUSE");
+						system("CLS");
+						goto piliOpe;
+						break;
+					case 3:
+						system("PAUSE");
+						system("CLS");
+						menu(name, course);
+						goto loop;
+						break;
+					case 4:
+						cout<<"\nThankyou For using the program";
+						exit(0);
+						break;
+					default:
+						cout<<"\n1-4 only";
+						break;
+					}
+				}else if(letter_con == 'F' || letter_con == 'f'){
+				
+				conversion_calendar: // <--- CREATE LABEL 
+				conv_calendar_date(); // <--- FUNCTION OF SIXTH PROBLEM
+				cout<<"\n\n[1] TRY AGAIN?\t\t[2] TRY ANOTHER PROGRAM?\t\t[3] BACK TO MAIN MENU\t\t[4] QUIT";
+				cout<<"\nPick a number: ";
+				cin>>conc;
+				
+				switch(conc){
+					case 1:
+						goto conversion_calendar;
+						break;
+					case 2:
+						system("PAUSE");
+						system("CLS");
+						goto piliOpe;
+						break;
+					case 3:
+						system("PAUSE");
+						system("CLS");
+						menu(name, course);
+						goto loop;
+						break;
+					case 4:
+						cout<<"\nThankyou For using the program";
+						exit(0);
+						break;
+					default:
+						cout<<"\n1-4 only";
+						break;
+					}
 				}
+
 			}
 	return 0;
 }

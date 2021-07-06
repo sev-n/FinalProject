@@ -1,8 +1,8 @@
-# FinalProject
-
-
+# Final Project
 
 Requirement for Final Term on College
 
-For Educational Purposes Only
+## Credits
+
+- Lei Fu 2018 <https://github.com/imfl/color-console>
 
