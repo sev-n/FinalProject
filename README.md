@@ -29,5 +29,31 @@ Goto Tools > Compiler Options..
 
 <img src="images\first_step.png">
 
+**Second**
+
+Settings
+
+<img src="images\second_step.png">
+
+**Third**
+
+Code Generation
+
+<img src="images\third_step.png">
+
+**Fourth**
+
+Language standard (-std) > Right side corner > choose ISO C++ 11
+
+<img src="images\fourth_step.png">
+
+<img src="images\fifth_step.png">
+
+**Last**
+
+Click Ok
+
+<img src="images\last_step.png">
+
 
 
