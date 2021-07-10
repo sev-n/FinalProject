@@ -3,7 +3,6 @@
 using namespace std;
 
 void about_us(){
-	system("COLOR 3");
 	
 	cout<<"\t\t================================================================================";
     cout<<"\n\t\t\t\t\t\t*** ABOUT US ***\n";

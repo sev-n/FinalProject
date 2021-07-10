@@ -12,7 +12,6 @@ int main(){
     char letter_con; // <-----  program choices
     string name, course;
 
-    system("COLOR 6");
 
     cout<<"Enter your name: ";
     getline(cin, name);
