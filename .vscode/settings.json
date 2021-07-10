@@ -39,6 +39,7 @@
         "sstream": "cpp",
         "stdexcept": "cpp",
         "streambuf": "cpp",
-        "conditional.cpp": "c"
+        "conditional.cpp": "c",
+        "loop.cpp": "c"
     }
 }

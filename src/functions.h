@@ -8,6 +8,7 @@
 #include "mainMenu.cpp"
 #include "array.cpp"
 #include "operator.cpp"
+#include "aboutus.cpp"
 #include "color.hpp" // https://github.com/imfl/color-console
 
 void pyramid();
@@ -35,6 +36,8 @@ void calcu();
 void vowel();
 
 void menu(string name, string course);
+
+void about_us();
 
 void FacArr();
 
