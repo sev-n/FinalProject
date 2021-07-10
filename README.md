@@ -8,7 +8,7 @@ Requirement for Final Term on College
 
 ---
 
-## Setting up for the Dev-c++ users
+## Set up for the Dev-c++ users
 
 **First**
 
