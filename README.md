@@ -2,10 +2,6 @@
 
 Requirement for Final Term on College
 
-## Copyright
-
-© Lei Fu 2018       <https://github.com/imfl/color-console>
-
 ---
 
 ## Set up for the Dev-c++ users
@@ -57,5 +53,10 @@ Then click Ok
 - Harold Son Enriquez       <https://www.facebook.com/haroldson.enriquez>
 - Milbert Andrew Sigaan     <https://www.facebook.com/milbert.shivan>
 
+---
+
+## Copyright
+
+© Lei Fu 2018       <https://github.com/imfl/color-console>
 
 
