@@ -16,37 +16,36 @@ void about_us(){
     
     cout<<"\n\n\t\t\t\t\t\t" << dye::black_on_white(" THE PROGRAMMERS ") << "\n\n"<<endl;
     cout<< dye::purple("\t   LEADERS:\n") <<endl;
-    cout<<dye::light_yellow("\t\t[") << dye::yellow("1") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("Denniel Lurion\t\t\t\t\t") << dye::light_yellow("[") << dye::yellow("2") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("Nerwin Panis")<<endl;
-    cout<< dye::grey("\t\t    AGE :") << dye::bright_white(" 20\t\t\t\t\t\t\t   ") << dye::grey(" AGE :") << dye::bright_white(" 19") << endl;
-    cout<< dye::grey("\t\t    GNDR:") << dye::bright_white(" Male\t\t\t\t\t\t\t   ") << dye::grey(" GNDR:") << dye::bright_white(" Male")<<endl;
-    cout<< dye::grey("\t\t    HBBS:") << dye::bright_white(" Online Games & Self-Study(Programming) ") << dye::grey("\t\t    HBBS:") << dye::bright_white(" Basketball & Coding")<<endl;
-    cout<< dye::grey("\t\t    ADRS:") << dye::bright_white(" San Pedro laguna\t\t\t\t\t   ") << dye::grey(" ADRS:") << dye::bright_white(" San Pedro Laguna\n\n")<<endl;
+    cout<<dye::light_yellow("\t\t[") << dye::yellow("1") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("Denniel Lurion\t\t\t  ") << dye::light_yellow("[") << dye::yellow("2") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("Nerwin Panis")<<endl;
+    cout<< dye::grey("\t\t    AGE :") << dye::bright_white(" 20\t\t\t\t\t     ") << dye::grey(" AGE :") << dye::bright_white(" 19") << endl;
+    cout<< dye::grey("\t\t    GNDR:") << dye::bright_white(" Male\t\t\t\t\t     ") << dye::grey(" GNDR:") << dye::bright_white(" Male")<<endl;
+    cout<< dye::grey("\t\t    HBBS:") << dye::bright_white(" Online Games & Self-Study(Programming) ") << dye::grey("     HBBS:") << dye::bright_white(" Basketball & Coding")<<endl;
+    cout<< dye::grey("\t\t    ADRS:") << dye::bright_white(" San Pedro laguna\t\t\t     ") << dye::grey(" ADRS:") << dye::bright_white(" San Pedro Laguna\n\n")<<endl;
     
     cout<< dye::purple("\t   MEMBERS:\n") <<endl;
-    cout<<dye::light_yellow("\t\t[") << dye::yellow("1") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("John Henry Angas\t\t\t\t\t") << dye::light_yellow("[") << dye::yellow("2") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("Harold Son Enriquez")<<endl;
-    cout<<dye::grey("\t\t    AGE :") << dye::bright_white(" 19\t\t\t\t\t\t\t   ") << dye::grey(" AGE :") << dye::bright_white(" 19") << endl;
-    cout<< dye::grey("\t\t    GNDR:") << dye::bright_white(" Male\t\t\t\t\t\t\t   ") << dye::grey(" GNDR:") << dye::bright_white(" Male")<<endl;
-    cout<<dye::grey("\t\t    HBBS:") << dye::bright_white(" Online Games & Play Musical Instrument ") << dye::grey("\t\t    HBBS:") << dye::bright_white(" Play Basketball & Online Games")<<endl;
-    cout<<dye::grey("\t\t    ADRS:") << dye::bright_white(" GMA Cavite\t\t\t\t\t           ") <<  dye::grey(" ADRS:") << dye::bright_white(" Silang Cavite\n\n")<<endl;
+    cout<<dye::light_yellow("\t\t[") << dye::yellow("1") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("John Henry Angas\t\t\t  ") << dye::light_yellow("[") << dye::yellow("2") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("Harold Son Enriquez")<<endl;
+    cout<<dye::grey("\t\t    AGE :") << dye::bright_white(" 19\t\t\t\t\t     ") << dye::grey(" AGE :") << dye::bright_white(" 19") << endl;
+    cout<< dye::grey("\t\t    GNDR:") << dye::bright_white(" Male\t\t\t\t\t     ") << dye::grey(" GNDR:") << dye::bright_white(" Male")<<endl;
+    cout<<dye::grey("\t\t    HBBS:") << dye::bright_white(" Online Games & Play Musical Instrument ") << dye::grey("     HBBS:") << dye::bright_white(" Play Basketball & Online Games") << endl;
+    cout<<dye::grey("\t\t    ADRS:") << dye::bright_white(" GMA Cavite\t\t\t             ") <<  dye::grey(" ADRS:") << dye::bright_white(" Silang Cavite\n\n")<<endl;
     
-    cout<<dye::light_yellow("\t\t[") << dye::yellow("3") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("Kyle L.F Galanta\t\t\t\t\t") << dye::light_yellow("[") << dye::yellow("4") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("Kristine Joyce Beato")<<endl;
-    cout<<dye::grey("\t\t    AGE :") << dye::bright_white(" 20\t\t\t\t\t\t\t   ") << dye::grey(" AGE :") << dye::bright_white(" 19") << endl;
-    cout<< dye::grey("\t\t    GNDR:") << dye::bright_white(" Male\t\t\t\t\t\t\t   ") << dye::grey(" GNDR:") << dye::bright_white(" Female")<<endl;
-    cout<<dye::grey("\t\t    HBBS:") << dye::bright_white(" Cycling & Play Online Games ")<< dye::grey("\t\t\t\t    HBBS:") << dye::bright_white(" Online Games & Making \n") << \
-    dye::bright_white("\t\t\t\t\t\t\t\t\t\t\t  TikTok Videos") <<endl;
-    cout<<dye::grey("\t\t    ADRS:") << dye::bright_white(" Paliparan III, Cavite\t\t\t\t\t   ") <<  dye::grey(" ADRS:") << dye::bright_white(" GMA Cavite\n\n")<<endl;
+    cout<<dye::light_yellow("\t\t[") << dye::yellow("3") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("Kyle L.F Galanta\t\t\t  ") << dye::light_yellow("[") << dye::yellow("4") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("Kristine Joyce Beato")<<endl;
+    cout<<dye::grey("\t\t    AGE :") << dye::bright_white(" 20\t\t\t\t\t     ") << dye::grey(" AGE :") << dye::bright_white(" 19") << endl;
+    cout<< dye::grey("\t\t    GNDR:") << dye::bright_white(" Male\t\t\t\t\t     ") << dye::grey(" GNDR:") << dye::bright_white(" Female")<<endl;
+    cout<<dye::grey("\t\t    HBBS:") << dye::bright_white(" Cycling & Play Online Games ")<< dye::grey("\t\t      HBBS:") << dye::bright_white(" Online Games & Making TikTok Videos") <<endl;
+    cout<<dye::grey("\t\t    ADRS:") << dye::bright_white(" Paliparan III, Cavite\t\t\t     ") <<  dye::grey(" ADRS:") << dye::bright_white(" GMA Cavite\n\n")<<endl;
     
-    cout<<dye::light_yellow("\t\t[") << dye::yellow("5") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("Melvin Vardeleon\t\t\t\t\t") << dye::light_yellow("[") << dye::yellow("6") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("Cedrick John Gueverra")<<endl;
-    cout<<dye::grey("\t\t    AGE :") << dye::bright_white(" 18\t\t\t\t\t\t\t   ") << dye::grey(" AGE :") << dye::bright_white(" 19") << endl;
-    cout<< dye::grey("\t\t    GNDR:") << dye::bright_white(" Male\t\t\t\t\t\t\t   ") << dye::grey(" GNDR:") << dye::bright_white(" Male")<<endl;
-    cout<<dye::grey("\t\t    HBBS:") << dye::bright_white(" Online Games & Motorcycle ")<< dye::grey("\t\t\t\t    HBBS:") << dye::bright_white(" Music & Play Online Games")<<endl;
-    cout<<dye::grey("\t\t    ADRS:") << dye::bright_white(" Paliparan I, Cavite\t\t\t\t\t   ") <<  dye::grey(" ADRS:") << dye::bright_white(" Santa.Rosa, Laguna\n\n")<<endl;
+    cout<<dye::light_yellow("\t\t[") << dye::yellow("5") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("Melvin Vardeleon\t\t\t  ") << dye::light_yellow("[") << dye::yellow("6") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("Cedrick John Gueverra")<<endl;
+    cout<<dye::grey("\t\t    AGE :") << dye::bright_white(" 18\t\t\t\t\t     ") << dye::grey(" AGE :") << dye::bright_white(" 19") << endl;
+    cout<< dye::grey("\t\t    GNDR:") << dye::bright_white(" Male\t\t\t\t\t     ") << dye::grey(" GNDR:") << dye::bright_white(" Male")<<endl;
+    cout<<dye::grey("\t\t    HBBS:") << dye::bright_white(" Online Games & Motorcycle ")<< dye::grey("\t\t      HBBS:") << dye::bright_white(" Music & Play Online Games")<<endl;
+    cout<<dye::grey("\t\t    ADRS:") << dye::bright_white(" Paliparan I, Cavite\t\t\t     ") <<  dye::grey(" ADRS:") << dye::bright_white(" Santa.Rosa, Laguna\n\n")<<endl;
     
-    cout<<dye::light_yellow("\t\t[") << dye::yellow("7") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("Jomari De Guzman\t\t\t\t\t") << dye::light_yellow("[") << dye::yellow("8") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("Milbert Sigaan")<<endl;
-    cout<<dye::grey("\t\t    AGE :") << dye::bright_white(" 19\t\t\t\t\t\t\t   ") << dye::grey(" AGE :") << dye::bright_white(" 19") << endl;
-    cout<< dye::grey("\t\t    GNDR:") << dye::bright_white(" Male\t\t\t\t\t\t\t   ") << dye::grey(" GNDR:") << dye::bright_white(" Male")<<endl;
-    cout<<dye::grey("\t\t    HBBS:") << dye::bright_white(" Music & Play Online Games ")<< dye::grey("\t\t\t\t    HBBS:") << dye::bright_white(" Play Online Games")<<endl;
-    cout<<dye::grey("\t\t    ADRS:") << dye::bright_white(" Paliparan, Cavite\t\t\t\t\t   ") <<  dye::grey(" ADRS:") << dye::bright_white(" GMA, Cavite\n\n")<<endl;
+    cout<<dye::light_yellow("\t\t[") << dye::yellow("7") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("Jomari De Guzman\t\t\t  ") << dye::light_yellow("[") << dye::yellow("8") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("Milbert Sigaan")<<endl;
+    cout<<dye::grey("\t\t    AGE :") << dye::bright_white(" 19\t\t\t\t\t     ") << dye::grey(" AGE :") << dye::bright_white(" 19") << endl;
+    cout<< dye::grey("\t\t    GNDR:") << dye::bright_white(" Male\t\t\t\t\t     ") << dye::grey(" GNDR:") << dye::bright_white(" Male")<<endl;
+    cout<<dye::grey("\t\t    HBBS:") << dye::bright_white(" Music & Play Online Games ")<< dye::grey("\t\t      HBBS:") << dye::bright_white(" Play Online Games")<<endl;
+    cout<<dye::grey("\t\t    ADRS:") << dye::bright_white(" Paliparan, Cavite\t\t\t     ") <<  dye::grey(" ADRS:") << dye::bright_white(" GMA, Cavite\n\n")<<endl;
 	
 	cout<< "\t\t\t\t\t\t" << dye::black_on_white(" DATA PRIVACY STATEMENT ") << "\n\n"<<endl;
 	cout<< dye::bright_white("\t\tOne of the main programmer ") << dye::yellow("'Nerwin Panis'") << dye::bright_white(", collects a variety of information that the other")<<endl; 

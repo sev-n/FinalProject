@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-//#include <stdlib.h>
 #include "src/functions.h"
 using namespace std;
 
