@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <stdlib.h>
+//#include <stdlib.h>
 #include "src/functions.h"
 using namespace std;
 
@@ -13,9 +13,9 @@ int main(){
     string name, course;
 
 
-    cout<<"Enter your name: ";
+    cout<< dye::grey("Enter your name: ");
     getline(cin, name);
-    cout<<"Enter your course: ";
+    cout<< dye::grey("Enter your course: ");
     getline(cin, course);
     system("CLS");
 
@@ -28,21 +28,20 @@ int main(){
     //system("PAUSE");
     system("CLS");
 
-    // NEW UPDATE GUMAMIT AKO CCTYPE LIBRARY PARA MA-ACCESS NATIN ISDIGIT() FUNCTION
-
     if(num){
         if(num == 1){
             piliLoop: // <--- CREATE A LABEL
-            cout<<"\t\t===========================================================================\n";
-            cout<<"\t\t\t\t\t--YOU CHOSE LOOPING TOPICS--\n";
-            cout<<"\n\t\t\t\t\tPROGRAMS IN LOOPING SECTION\n";
-            cout<<"\n\t\t===========================================================================\n\n";
+            cout<< dye::light_blue("\t\t===========================================================================\n");
+            cout<< dye::light_blue("\t\t\t\t\t--") << dye::yellow("YOU CHOSE LOOPING TOPICS") << dye::light_blue("--\n");
+            cout<< dye::yellow("\n\t\t\t\t\tPROGRAMS IN LOOPING SECTION\n");
+            cout<<dye::light_blue("\n\t\t===========================================================================\n\n");
 
-            cout<<"\t[A] ASTERISK PYRAMID\t\t\t[B] SUM AND FACTORIAL\t\t[C] REVERSE A NUMBER\n\n\t[D] MULTIPLICATION TABLE OF N \
-        [E]COUNT DIGITS IN NUMBERS\t[F] FIBONACCI SERIES \
-        \n\n\t[G] BACK TO MAIN MENU\t\t\t[H] Exit\n\n";
+            cout<< dye::light_yellow("\t  [") << dye::yellow("A") << dye::light_yellow("] ") << dye::aqua("ASTERISK PYRAMID ") << dye::light_yellow("\t\t[") << dye::yellow("B") << dye::light_yellow("] ") << dye::aqua("SUM AND FACTORIAL ") << 
+            dye::light_yellow("\t\t[") << dye::yellow("C") << dye::light_yellow("] ") << dye::aqua("REVERSE A NUMBER \n\n") << dye::light_yellow("\t\t[") << dye::yellow("D") << dye::light_yellow("] ") << dye::aqua("MULTIPLICATION TABLE OF N ") <<
+            dye::light_yellow("\t[") << dye::yellow("E") << dye::light_yellow("] ") << dye::aqua("COUNT DIGITS IN NUMBER ") << dye::light_yellow("\t[") << dye::yellow("F") << dye::light_yellow("] ") << dye::aqua("FIBONACCI SERIES ") <<
+            dye::light_yellow("\n\n\t\t\t[") << dye::yellow("G") << dye::light_yellow("] ") << dye::red("Back to main menu ") << dye::light_yellow("\t\t[") << dye::yellow("H") << dye::light_yellow("] ") << dye::red("Exit \n\n\n");
 
-            cout<<"Enter letter (A/B/C/D/E/F/G/H): ";
+            cout<< dye::bright_white("Enter letter") << dye::bright_white(" (") << dye::yellow('A') << '/' << dye::yellow('B') << '/' << dye::yellow('C') << '/' << dye::yellow('D') << '/' << dye::yellow('E') << '/' << dye::yellow('F') << '/' << dye::yellow('G') << '/' << dye::yellow('H') << dye::bright_white("): ");
             cin>>letter_con;
 
             if(letter_con){
@@ -71,7 +70,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -103,7 +102,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -135,7 +134,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -167,7 +166,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -199,7 +198,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -231,7 +230,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -242,7 +241,7 @@ int main(){
                     system("CLS");
                     goto offmenu;
                 }else if(letter_con == 'H' || letter_con == 'h'){
-                    cout<<"\n\t\t\t\tTHANKYOU FOR USING THE PROGRAM HAVE A NICE DAY AHEAD!";
+                    cout<< dye::yellow("\n\t\t\t\tTHANKYOU FOR USING THE PROGRAM HAVE A NICE DAY AHEAD!");
                     exit(0);
                 }else{
                     system("CLS");
@@ -254,17 +253,19 @@ int main(){
 // |---------------------------------------------------------------------------------------------------------------------------------------|
         else if(num == 2){
             piliCon: // <---- GOTO CONDITIONAL
-            cout<<"\t\t===========================================================================\n";
-            cout<<"\t\t\t\t\t--YOU CHOSE CONDITIONAL--\n";
-            cout<<"\n\t\t\t\t    PROGRAMS IN CONDITIONAL STATEMENT\n";
-            cout<<"\n\t\t===========================================================================\n\n";
+            cout<< dye::light_blue("\t\t===========================================================================\n");
+            cout<< dye::light_blue("\t\t\t\t\t--") << dye::yellow("YOU CHOSE CONDITIONAL") << dye::light_blue("--\n");
+            cout<< dye::yellow("\n\t\t\t\t    PROGRAMS IN CONDITIONAL STATEMENT\n");
+            cout<< dye::light_blue("\n\t\t===========================================================================\n\n");
 
-            cout<<"\t[A] EQUIVALENT GRADE\t\t[B] TEMPERATURE DETECTOR\t[C] WEEKLY SALARY\n\n\t[D] REQUIRED AGE TO VOTE \
-    [E] SIMPLE CALCULATOR\t\t[F] IDENTIFY VOWEL \
-        \n\n\t[G] BACK TO MAIN MENU\t\t[H] Exit\n\n" << endl;
+            cout<< dye::light_yellow("\t  [") << dye::yellow("A") << dye::light_yellow("] ") << dye::aqua("EQUIVALENT GRADE ") << dye::light_yellow("\t\t[") << dye::yellow("B") << dye::light_yellow("] ") << dye::aqua("TEMPERATURE DETECTOR ") << 
+            dye::light_yellow("\t[") << dye::yellow("C") << dye::light_yellow("] ") << dye::aqua("WEEKLY SALARY \n\n") << dye::light_yellow("\t\t[") << dye::yellow("D") << dye::light_yellow("] ") << dye::aqua("REQUIRED AGE TO VOTE ") <<
+            dye::light_yellow("\t[") << dye::yellow("E") << dye::light_yellow("] ") << dye::aqua("SIMPLE CALCULATOR ") << dye::light_yellow("\t\t[") << dye::yellow("F") << dye::light_yellow("] ") << dye::aqua("IDENTIFY VOWEL ") <<
+            dye::light_yellow("\n\n\t\t\t[") << dye::yellow("G") << dye::light_yellow("] ") << dye::red("Back to main menu ") << dye::light_yellow("\t\t[") << dye::yellow("H") << dye::light_yellow("] ") << dye::red("Exit \n\n\n");
 
-            cout<<"Enter letter (A/B/C/D/E/F/G/H): ";
+            cout<< dye::bright_white("Enter letter") << dye::bright_white(" (") << dye::yellow('A') << '/' << dye::yellow('B') << '/' << dye::yellow('C') << '/' << dye::yellow('D') << '/' << dye::yellow('E') << '/' << dye::yellow('F') << '/' << dye::yellow('G') << '/' << dye::yellow('H') << dye::bright_white("): ");
             cin>>letter_con;
+
             if(letter_con){
                 if(letter_con == 'A' || letter_con == 'a'){
 
@@ -291,7 +292,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -323,7 +324,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -355,7 +356,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -387,7 +388,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -419,7 +420,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -451,7 +452,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -462,7 +463,7 @@ int main(){
                     system("CLS");
                     goto offmenu;
                 }else if(letter_con == 'H' || letter_con == 'h'){
-                    cout<<"\n\t\t\t\tTHANKYOU FOR USING THE PROGRAM HAVE A NICE DAY AHEAD!";
+                    cout<< dye::yellow("\n\t\t\t\tTHANKYOU FOR USING THE PROGRAM HAVE A NICE DAY AHEAD!");
                     exit(0);
                 }else{
                     system("CLS");
@@ -475,15 +476,17 @@ int main(){
 //--------------------------------------------------------------------------------------------------------------------------
         else if(num == 3){
             piliArr: // <---- CREATE LABEL FOR ARRAY
-            cout<<"\t\t===========================================================================\n";
-            cout<<"\t\t\t\t\t--YOU CHOSE ARRAY--\n";
-            cout<<"\n\t\t\t\t    PROGRAMS IN ARRAY USING ONE-DIMENSION\n";
-            cout<<"\n\t\t===========================================================================\n\n";
-            cout<<"\t[A] FACTORIAL OF NUMBER\t\t[B] SUM OF N\t\t\t[C] IDENTIFY IF POSTIVE OR NEGATIVE\n\n\t[D] LOWEST AND HIGHEST NUMBER \
-    [E] COUNT HOW MANY APPEARED\t[F] FIND SPECIFIC NAME\
-        \n\n\t[G] BACK TO MAIN MENU\t\t[H] Exit\n\n"<< endl;
+            cout<< dye::light_blue("\t\t===========================================================================\n");
+            cout<< dye::light_blue("\t\t\t\t\t--") << dye::yellow("YOU CHOSE ARRAY") << dye::light_blue("--\n");
+            cout<< dye::yellow("\n\t\t\t\tPROGRAMS IN ARRAY USING ONE-DIMENSION\n");
+            cout<< dye::light_blue("\n\t\t===========================================================================\n\n");
+            
+            cout<< dye::light_yellow("\t\t\t[") << dye::yellow("A") << dye::light_yellow("] ") << dye::aqua("FACTORIAL OF NUMBER ") << dye::light_yellow("\t[") << dye::yellow("B") << dye::light_yellow("] ") << dye::aqua("SUM OF NUMBER ") << 
+            dye::light_yellow("\t[") << dye::yellow("C") << dye::light_yellow("] ") << dye::aqua("POSITIVE OR NEGATIVE \n\n") << dye::light_yellow("\t\t[") << dye::yellow("D") << dye::light_yellow("] ") << dye::aqua("LOWEST AND HIGHEST NUMBER ") <<
+            dye::light_yellow("\t[") << dye::yellow("E") << dye::light_yellow("] ") << dye::aqua("COUNT OCCURRENCE/s ") << dye::light_yellow("\t[") << dye::yellow("F") << dye::light_yellow("] ") << dye::aqua("FIND SPECIFIC NAME ") <<
+            dye::light_yellow("\n\n\t[") << dye::yellow("G") << dye::light_yellow("] ") << dye::red("Back to main menu ") << dye::light_yellow("\t\t[") << dye::yellow("H") << dye::light_yellow("] ") << dye::red("Exit \n\n\n");
 
-            cout<<"Enter letter (A/B/C/D/E/F/G/H): ";
+            cout<< dye::bright_white("Enter letter") << dye::bright_white(" (") << dye::yellow('A') << '/' << dye::yellow('B') << '/' << dye::yellow('C') << '/' << dye::yellow('D') << '/' << dye::yellow('E') << '/' << dye::yellow('F') << '/' << dye::yellow('G') << '/' << dye::yellow('H') << dye::bright_white("): ");
             cin>>letter_con;
             if(letter_con){
                 if(letter_con == 'A' || letter_con == 'a'){
@@ -511,7 +514,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -543,7 +546,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -575,7 +578,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -607,7 +610,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -639,7 +642,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -672,7 +675,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -683,7 +686,7 @@ int main(){
                     system("CLS");
                     goto offmenu;
                 }else if(letter_con == 'H' || letter_con == 'h'){
-                    cout<<"\n\t\t\t\tTHANKYOU FOR USING THE PROGRAM HAVE A NICE DAY AHEAD!";
+                    cout<< dye::yellow("\n\t\t\t\tTHANKYOU FOR USING THE PROGRAM HAVE A NICE DAY AHEAD!");
                     exit(0);
                 }else{
                 system("CLS");
@@ -695,15 +698,17 @@ int main(){
 // |------------------------------------------------------------------------------------------------------------------------------------|
         else if(num == 4){
             piliOpe: // <---- CREATE LABEL FOR OPERATOR
-            cout<<"\t\t===========================================================================\n";
-            cout<<"\t\t\t\t\t--YOU CHOSE OPERATOR--\n";
-            cout<<"\n\t\t\t\t    PROGRAMS WITH OPERATORS \n";
-            cout<<"\n\t\t===========================================================================\n\n";
-            cout<<"\t[A] ARITHMETIC OPERATORS\t[B] RELATIONAL OPERATORS\t[C] LOGICAL OPERATORS\n\n\t[D] CURRENCY CONVERTER \
-        \t[E] CONVERT UNITS OF MEASUREMENT  [F] CALENDAR DATE CONVERTER\
-        \n\n\t[G] BACK TO MAIN MENU\t\t[H] Exit\n\n"<< endl;
+            cout<< dye::light_blue("\t\t===========================================================================\n");
+            cout<< dye::light_blue("\t\t\t\t\t--") << dye::yellow("YOU CHOSE OPERATOR") << dye::light_blue("--\n");
+            cout<< dye::yellow("\n\t\t\t\t\tPROGRAMS WITH OPERATORS \n");
+            cout<< dye::light_blue("\n\t\t===========================================================================\n\n");
+            
+            cout<< dye::light_yellow("\t\t\t[") << dye::yellow("A") << dye::light_yellow("] ") << dye::aqua("ARITHMETIC OPERATORS ") << dye::light_yellow("  [") << dye::yellow("B") << dye::light_yellow("] ") << dye::aqua("RELATIONAL OPERATORS ") << 
+            dye::light_yellow("\t[") << dye::yellow("C") << dye::light_yellow("] ") << dye::aqua("LOGICAL OPERATORS \n\n") << dye::light_yellow("\t\t[") << dye::yellow("D") << dye::light_yellow("] ") << dye::aqua("CURRENCY CONVERTER ") <<
+            dye::light_yellow("\t  [") << dye::yellow("E") << dye::light_yellow("] ") << dye::aqua("METRIC CONVERSION ") << dye::light_yellow("\t  [") << dye::yellow("F") << dye::light_yellow("] ") << dye::aqua("CALENDAR DATE CONVERTER ") <<
+            dye::light_yellow("\n\n\t[") << dye::yellow("G") << dye::light_yellow("] ") << dye::red("Back to main menu ") << dye::light_yellow("\t  [") << dye::yellow("H") << dye::light_yellow("] ") << dye::red("Exit \n\n\n");
 
-            cout<<"Enter letter (A/B/C/D/E/F/G/H): ";
+            cout<< dye::bright_white("Enter letter") << dye::bright_white(" (") << dye::yellow('A') << '/' << dye::yellow('B') << '/' << dye::yellow('C') << '/' << dye::yellow('D') << '/' << dye::yellow('E') << '/' << dye::yellow('F') << '/' << dye::yellow('G') << '/' << dye::yellow('H') << dye::bright_white("): ");
             cin>>letter_con;
             if(letter_con){
                 if(letter_con == 'A' || letter_con == 'a'){
@@ -731,7 +736,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -763,7 +768,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -795,7 +800,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -827,7 +832,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -859,7 +864,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -891,7 +896,7 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<<"\nThankyou For using the program";
+                            cout<< dye::yellow("\nThankyou For using the program");
                             exit(0);
                             break;
                         default:
@@ -902,7 +907,7 @@ int main(){
                     system("CLS");
                     goto offmenu;
                 }else if(letter_con == 'H' || letter_con == 'h'){
-                    cout<<"\n\t\t\t\tTHANKYOU FOR USING THE PROGRAM HAVE A NICE DAY AHEAD!";
+                    cout<< dye::yellow("\n\t\t\t\tTHANKYOU FOR USING THE PROGRAM HAVE A NICE DAY AHEAD!");
                     exit(0);
                 }else{
                     system("CLS");
@@ -914,9 +919,9 @@ int main(){
 // |------------------------------------------------------------------------------------------------------------------------------------|
         else if(num == 5){
             about_us();
-            cout<<"\n\n[1] BACK | [2] EXIT"<<endl;
+            cout << dye::light_yellow("\n\n[") << dye::yellow("1") << dye::light_yellow("] ") << dye::red("Back ") << '|' << dye::light_yellow("\t  [") << dye::yellow("2") << dye::light_yellow("] ") << dye::red("Exit \n");
             decabout:
-            cout<<"\nEnter a number: ";
+            cout<< dye::bright_white("\nEnter a number: ");
             cin>>aboutnum;
 
             switch(aboutnum){
@@ -925,7 +930,7 @@ int main(){
                     goto offmenu;
                     break;
                 case 2:
-                    cout<<"\n\t\t\t\tTHANKYOU FOR USING THE PROGRAM HAVE A NICE DAY AHEAD!";
+                    cout<< dye::yellow("\n\t\t\t\tTHANKYOU FOR USING THE PROGRAM HAVE A NICE DAY AHEAD!");
                     exit(0);
                     break;
                 default:
@@ -933,8 +938,8 @@ int main(){
                     break;
             }
         }
-        else if(num > 5){                       // tol may binago ko sa part na to, kase naeencounter ko yung blinking if mag enter ng string
-            system("CLS");                      // then sinama ko na rin yung input number greater than 5 narinig ko kase yun nung nakaraan HAHAHA
+        else if(num > 5){                       
+            system("CLS");
             goto offmenu;
         }
     }else if(cin.fail()){
