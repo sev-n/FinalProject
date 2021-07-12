@@ -40,6 +40,8 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "conditional.cpp": "c",
-        "loop.cpp": "c"
+        "loop.cpp": "c",
+        "list": "cpp",
+        "map": "cpp"
     }
 }

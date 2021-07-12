@@ -28,13 +28,20 @@ void grade_equi(){
 	
 }
 void temper(){
-	
 	float temp;
 	
 	std::cout<<"\n\t\t\t\t\t***TEMPERATURE DETECTOR***";
+	
+	return_temp:
 	std::cout << "\n\nWhat is the temperature?: ";
 	std::cin >> temp;
 	
+	if(temp) ;
+    else if(std::cin.fail()){
+        std::cin.clear(); std::cin.ignore(1024, '\n');
+        goto return_temp;
+    }
+
 	if ( temp < 0){
 		std::cout << "\nYour temperature is " << temp << " degree celcius. IT is considered as EXTREMELY COLD.";
 	}else if ( temp >= 0 && temp <= 15 ){
@@ -44,14 +51,22 @@ void temper(){
 	}else{
 		std::cout << "\nYour temperature is " << temp << " degree celcius. You might want to lower it because this is HOT BOI!";
 	}
-	
 }
+
 void work_salary(){
 	float hours, salary;
 	
 	std::cout<<"\n\t\t\t\t\t***WEEKLY SALARY***";
+
+	return_ask:
 	std::cout<<"\n\nEnter the hours worked in a week: ";
 	std::cin>>hours;
+
+	if(hours) ;
+    else if(std::cin.fail()){
+        std::cin.clear(); std::cin.ignore(1024, '\n');
+        goto return_ask;
+    }
 		
 	if(hours <= 40){
 		salary = 13.75 * hours;
@@ -68,11 +83,18 @@ void work_salary(){
 }
 
 void vote_reg(){
-	
 	int age;
 	std::cout<<"\n\t\t\t\t\t***VOTER'S AGE VALIDATION***";
+	
+	return_age:
 	std::cout<<"\n\nEnter your age: ";
 	std::cin>>age;
+
+	if(age) ;
+    else if(std::cin.fail()){
+        std::cin.clear(); std::cin.ignore(1024, '\n');
+        goto return_age;
+    }
 	
 	if(age < 18){
 		std::cout<<"\n[MINOR ALERT!!!] You are NOT eligible to vote";
@@ -88,26 +110,33 @@ void calcu(){
 
     std::cout << "\t\tEnter an operator (+, -, *, /): ";
     std::cin >> op;
+
+	return_xy:
     std::cout << "\n\t\tEnter two numbers separated by space: ";
     std::cin >> num >> num1;
 
-    switch (op) {
-        case '+':
-            std::cout << "\t\t\tYou choose addtion: " << num << " + " << num1 << " = " << num + num1;
-            break;
-        case '-':
-            std::cout << "\t\t\tYou choose subtraction: " << num << " - " << num1 << " = " << num - num1;
-            break;
-        case '*':
-            std::cout << "\t\t\tYou choose multiplication: " << num << " * " << num1 << " = " << num * num1;
-            break;
-        case '/':
-            std::cout << "\t\t\tYou choose divition: " << num << " / " << num1 << " = " << num / num1;
-            break;
-        default:
-            std::cout << "\t\t\tInvalid Input";
-            break;
+	if(num && num1) ;
+    else if(std::cin.fail()){
+        std::cin.clear(); std::cin.ignore(1024, '\n');
+        goto return_xy;
     }
+	switch (op) {
+		case '+':
+			std::cout << "\t\t\tYou choose addtion: " << num << " + " << num1 << " = " << num + num1;
+			break;
+		case '-':
+			std::cout << "\t\t\tYou choose subtraction: " << num << " - " << num1 << " = " << num - num1;
+			break;
+		case '*':
+			std::cout << "\t\t\tYou choose multiplication: " << num << " * " << num1 << " = " << num * num1;
+			break;
+		case '/':
+			std::cout << "\t\t\tYou choose divition: " << num << " / " << num1 << " = " << num / num1;
+			break;
+		default:
+			std::cout << "\t\t\tInvalid Operator";
+			break;
+	}
 }
 
 void vowel(){
@@ -115,8 +144,9 @@ void vowel(){
 
 	std::cout << "\n\t\t\t\t--> INDENTIFY IF IT'S VOWEL OR NOT <--\n" << std::endl;
 
-	std::cout << "\t\tEnter the Letter: ";
+	std::cout << "\t\tEnter a Letter: ";
    	std::cin >> ch;
+
 
 	switch (ch) {
 		case 'A':

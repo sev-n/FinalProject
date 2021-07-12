@@ -1,47 +1,82 @@
-#include <iostream>
-#include <string>
-using namespace std;
+//#include <iostream>
+//#include <string>
+//using namespace std;
 
 void FacArr(){
     int number, factorial = 1;
 
+    return_number:
     cout << "Enter a number: ";
     cin >> number;
 
     int myArray[number];
 
-    for(int i = 1; i <= number; i++){
-        myArray[i] = i;
-        myArray[number] = myArray[i];
+    if(number){
+        for(int i = 1; i <= number; i++){
+            myArray[i] = i;
+            myArray[number] = myArray[i];
+        }
+    }else if(cin.fail()){
+        //system("CLS");
+        cin.clear(); cin.ignore(1024, '\n');
+        goto return_number;
     }
-
     if(number >= 1){ 
         for(int j = 1; j <= number; j++) factorial *= myArray[j];
         cout << "The Factorial of N is: " << factorial;
-    } else cout << "TO COMPUTE FACTORIAL, \
-MUST BE INTEGER OR MORE THAN/EQUAL TO 1";
+    }
 }
+
 void sumofN(){
     int number, sum = 0;
 
+    cout << "THE INPUTTED VALUE WILL REPEAT IF YOU ENTERED INVALID VALUES" << endl;
+
+    return_number:
     cout << "Enter a size in number: ";
     cin >> number;
 
-    int array[number];
+    if(number) ;
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, '\n');
+        goto return_number;
+    }
 
+    int array[number];
+    
+    return_int:
     cout << "Enter a integers: ";
-    for(int i = 0; i < number; i++) cin >> array[i];
+    for(int i = 0; i < number; i++){
+        cin >> array[i];
+        if(array[i]){
+            ;
+        }else if(cin.fail()){
+            cin.clear(); cin.ignore(1024, '\n');
+            cout << "Invalid input, Please enter again\n" << endl;
+            goto return_int;
+        }
+    }
 
     for(int j = 0; j < number; j++) sum += array[j];
     cout << "The sum of N is: " << sum;
 }
 void posNneg(){
     int number[5];
+    
+    cout << "IDENTIFY IF POSITIVE OR NEGATIVE NUMBERS\n" << endl;
+    cout << "THE INPUTTED VALUE WILL REPEAT IF YOU ENTERED INVALID VALUES" << endl;
 
-    cout << "Enter a Five Number, Must be Integer otherwise \
-it will Terminate" << endl;
-
-    for(int i = 0; i < 5; i++) cin >> number[i];
+    return_arr:
+    cout << "Enter a Five Number, Must be Integer: ";
+    for(int i = 0; i < 5; i++){
+        cin >> number[i];
+        if(number[i]) ;
+        else if(cin.fail()){
+            cin.clear(); cin.ignore(1024, '\n');
+            cout << "Invalid input, Please enter again\n" << endl;
+            goto return_arr;
+        }
+    }
 
     cout << "Positive Number/s: ";
     for(int j = 0; j < 5; j++){
@@ -57,45 +92,66 @@ void low_high(){
     int number;
 
     cout << "\n\t\t\t\t--> FIND LOWEST AND HIGHEST NUMBER <--\n" << endl;
+    cout << "THE INPUTTED VALUE WILL REPEAT IF YOU ENTERED INVALID VALUES" << endl;
 
+    return_number:
     cout << "Enter array size: ";
     cin >> number;
 
+    if(number) ;
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, '\n');
+        goto return_number;
+    }
     int arr[number];
 
+    return_arr:
     cout << "Enter a number: ";
-    for(int i = 0; i < number; i++) cin >> arr[i];
-
-    if(number){
-
-        for(int i = 1; i < number; i++){
-            if(arr[0] > arr[i]) arr[0] = arr[i]; //first element = lowest number
+    for(int i = 0; i < number; i++){
+        cin >> arr[i];
+        if(arr[i]) ;
+        else if(cin.fail()){
+            cin.clear(); cin.ignore(1024, '\n');
+            cout << "Invalid input, Please enter again\n" << endl;
+            goto return_arr;
         }
-        cout << "The lowest value is " << arr[0] << endl;
-
-        for(int j = 1; j < number; j++){
-            if(arr[0] < arr[j]) arr[0] = arr[j]; //first element = highest number
-        }
-        cout << "The highest value is " << arr[0] << endl;
     }
+
+    for(int i = 1; i < number; i++){
+        if(arr[0] > arr[i]) arr[0] = arr[i]; //first element = lowest number
+    }
+    cout << "The lowest value is " << arr[0] << endl;
+
+    for(int j = 1; j < number; j++){
+        if(arr[0] < arr[j]) arr[0] = arr[j]; //first element = highest number
+    }
+    cout << "The highest value is " << arr[0] << endl;
 }
+
 void occur_n(){
     int number, to_search, occur = 0, myArray[10];
 
     cout << "\n\t\t\t\t--> COUNT OCCURRENCE/S OF N <--\n" << endl;
+    cout << "THE INPUTTED VALUE WILL REPEAT IF YOU ENTERED INVALID VALUES" << endl;
 
-
+    return_number:
     cout << "Enter 10 numbers: ";
-    for(int i = 0; i < 10; ++i)
+    for(int i = 0; i < 10; ++i){
         cin >> myArray[i];
-
+        if(myArray[i]) ;
+        else if(cin.fail()){
+            cin.clear(); cin.ignore(1024, '\n');
+            goto return_number;
+        }
+    }
+    return_search:
     cout << "Enter a number to search: ";
     cin >> to_search;
 
-    for(int x = 0; x < 10; x++){
-        if(myArray[x] == to_search){
-            occur = occur + 1;
-        }
+    if(to_search) for(int x = 0; x < 10; x++) if(myArray[x] == to_search) occur = occur + 1;
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, 'n');
+        goto return_search;
     }
     cout << "Occurrence/s: " << occur;
 }
