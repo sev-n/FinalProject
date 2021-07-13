@@ -1,5 +1,3 @@
-#include<iostream>
-
 void pyramid(){
 	int num, i, j;
 	
@@ -127,7 +125,7 @@ void fibo_terms(){
         std::cin.clear(); std::cin.ignore(1024, '\n');
         goto return_fibo;
     }
-
+    
     while(count < n){
         std::cout << "\t" <<first_term << " ";
         int temp = first_term + second_term;

@@ -2,14 +2,21 @@
 using namespace std;
 
 void about_us(){
-	
-	cout<< dye::light_blue("\t\t================================================================================");
-    cout<< dye::light_blue("\n\t\t\t\t\t\t***") << dye::yellow(" ABOUT US ") << dye::light_blue("***\n");
-    cout<< dye::light_blue("\n\t\t================================================================================\n\n");
+
+	cout<< dye::light_blue("\n\t====================================================================================================\n\n");
+    cout << R"(                 /$$$$$$$         /$$$$$$         /$$$$$$         /$$$$$$                      /$$$$$$
+                | $$__  $$       /$$__  $$       /$$__  $$       /$$__  $$                    |_  $$_/
+                | $$  \ $$      | $$  \__/      | $$  \__/      | $$  \__/                      | $$  
+                | $$$$$$$       |  $$$$$$       | $$            |  $$$$$$        /$$$$$$        | $$  
+                | $$__  $$       \____  $$      | $$             \____  $$      |______/        | $$  
+                | $$  \ $$       /$$  \ $$      | $$    $$       /$$  \ $$                      | $$  
+                | $$$$$$$/      |  $$$$$$/      |  $$$$$$/      |  $$$$$$/                     /$$$$$$
+                |_______/        \______/        \______/        \______/                     |______/)" << endl;
+    cout<< dye::light_blue("\n\t====================================================================================================\n\n");
   
     cout<< dye::purple("\t\t\t\t\t\t  OBJECTIVE\n\n\n");
-    cout<< dye::bright_white("\t\tThis programming project objective is to provide the student with the opportunity to")<<endl;
-    cout<< dye::bright_white("\t   work on a computer program to solve a simple related problem. This program contains the C++")<<endl;
+    cout<< dye::bright_white("\t\t\tThis project aims to provide the student with the opportunity to")<<endl;
+    cout<< dye::bright_white("\t   work on a computer program to solve a simple related problems. This program contains the C++")<<endl;
     cout<< dye::bright_white("\t   compiled basic solved programs. We, the programmers, provided the most important programs on")<<endl;
     cout<< dye::bright_white("\t   each topic. Every given programs includes the description, code, as well as the output of the")<<endl;
     cout<< dye::bright_white("\t   program. All given programs are compiled and tested on a windows system.")<<endl;

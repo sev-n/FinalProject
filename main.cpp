@@ -4,9 +4,7 @@
 using namespace std;
 
 int main(){
-    int num;
-    int aboutnum;
-    int conc; // <-- after trying the program
+    int num, aboutnum, conc;
     char letter_con; // <-----  program choices
     string name, course;
 
@@ -38,7 +36,8 @@ int main(){
             dye::light_yellow("\t[") << dye::yellow("E") << dye::light_yellow("] ") << dye::aqua("COUNT DIGITS IN NUMBER ") << dye::light_yellow("\t[") << dye::yellow("F") << dye::light_yellow("] ") << dye::aqua("FIBONACCI SERIES ") <<
             dye::light_yellow("\n\n\t\t\t[") << dye::yellow("0") << dye::light_yellow("] ") << dye::red("Back to main menu ") << dye::light_yellow("\t\t[") << dye::yellow("1") << dye::light_yellow("] ") << dye::red("Exit \n\n\n");
 
-            cout<< dye::bright_white("Enter letter") << dye::bright_white(" (") << dye::yellow('A') << '/' << dye::yellow('B') << '/' << dye::yellow('C') << '/' << dye::yellow('D') << '/' << dye::yellow('E') << '/' << dye::yellow('F') << '/' << dye::yellow('G') << '/' << dye::yellow('H') << dye::bright_white("): ");
+            cout<< dye::bright_white("Enter letter") << dye::bright_white(" (") << dye::yellow('A') << '/' << dye::yellow('B') << '/' << dye::yellow('C') << '/' << 
+            dye::yellow('D') << '/' << dye::yellow('E') << '/' << dye::yellow('F') << '/' << dye::yellow('G') << '/' << dye::yellow('H') << dye::bright_white("): ");
             cin>>letter_con;
 
             if(letter_con){
@@ -52,6 +51,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitloopa;
+                    }
                     switch(conc){
                         case 1:
                             goto pyra;
@@ -84,6 +88,12 @@ int main(){
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
+
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitloopb;
+                    }
 
                     switch(conc){
                         case 1:
@@ -118,6 +128,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitloopc;
+                    }
                     switch(conc){
                         case 1:
                             goto rev;
@@ -151,6 +166,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitloopd;
+                    }
                     switch(conc){
                         case 1:
                             goto multiTable;
@@ -184,6 +204,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitloope;
+                    }
                     switch(conc){
                         case 1:
                             goto count_digit;
@@ -217,6 +242,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitloopf;
+                    }
                     switch(conc){
                         case 1:
                             goto fibo;
@@ -280,6 +310,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitcondia;
+                    }
                     switch(conc){
                         case 1:
                             goto equi;
@@ -313,6 +348,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitcondib;
+                    }
                     switch(conc){
                         case 1:
                             goto tmprtr;
@@ -346,6 +386,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitcondic;
+                    }
                     switch(conc){
                         case 1:
                             goto weeklySalary;
@@ -379,6 +424,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitcondid;
+                    }
                     switch(conc){
                         case 1:
                             goto vote;
@@ -412,6 +462,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitcondie;
+                    }
                     switch(conc){
                         case 1:
                             goto calcu;
@@ -445,6 +500,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitcondif;
+                    }
                     switch(conc){
                         case 1:
                             goto find_vowel;
@@ -508,6 +568,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitarra;
+                    }
                     switch(conc){
                         case 1:
                             goto arrFac;
@@ -541,6 +606,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitarrb;
+                    }
                     switch(conc){
                         case 1:
                             goto arrSum;
@@ -574,6 +644,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitarrc;
+                    }
                     switch(conc){
                         case 1:
                             goto arrposNneg;
@@ -607,6 +682,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitarrd;
+                    }
                     switch(conc){
                         case 1:
                             goto arr_low_high;
@@ -640,6 +720,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitarre;
+                    }
                     switch(conc){
                         case 1:
                             goto arr_occur;
@@ -674,6 +759,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitarrf;
+                    }
                     switch(conc){
                         case 1:
                             goto arr_find_name;
@@ -736,6 +826,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitopea;
+                    }
                     switch(conc){
                         case 1:
                             goto arith;
@@ -769,6 +864,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitopeb;
+                    }
                     switch(conc){
                         case 1:
                             goto relational;
@@ -802,6 +902,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitopec;
+                    }
                     switch(conc){
                         case 1:
                             goto logical;
@@ -835,6 +940,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitoped;
+                    }
                     switch(conc){
                         case 1:
                             goto convert;
@@ -868,6 +978,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitopee;
+                    }
                     switch(conc){
                         case 1:
                             goto conversion_unit;
@@ -901,6 +1016,11 @@ int main(){
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
+                    if(conc) ;      // each if
+                    else if(cin.fail()){
+                        cin.clear(); cin.ignore(1024, '\n');
+                        goto ulitopef;
+                    }
                     switch(conc){
                         case 1:
                             goto conversion_calendar;
@@ -945,6 +1065,11 @@ int main(){
             cout<< dye::bright_white("\nEnter a number: ");
             cin>>aboutnum;
 
+            if(aboutnum) ;      // each if
+                else if(cin.fail()){
+                    cin.clear(); cin.ignore(1024, '\n');
+                    goto decabout;
+                }
             switch(aboutnum){
                 case 1:
                     system("CLS");
