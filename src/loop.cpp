@@ -1,65 +1,70 @@
+#include "color.hpp"
+using namespace std;
+
 void pyramid(){
 	int num, i, j;
 	
-	std::cout<<"\n\t\t\t\t\t***ASTERISK PYRAMID***";
+    cout<<"\n\t***" << dye::yellow(" ASTERISK PYRAMID ") << "***\n" << endl;
+
 	return_num:
-    std::cout<<"\n\nEnter a number: ";
-	std::cin>>num;
+    cout<<dye::bright_white("Enter a number: ");
+	cin>>num;
 
     if(num) ;
-    else if(std::cin.fail()){
-        std::cin.clear(); std::cin.ignore(1024, '\n');
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, '\n');
         goto return_num;
     }
-	
+	cout << "\n";
 	for(i = 1; i<=num; i++){
+        cout << "\t";
 		for(j = 1; j<=num-i; j++){
-			std::cout<<" ";
+			cout<<" ";
 		}
 		for(j = 1; j<=2*i-1; j++){
-			std::cout<<"*";
+			cout<< dye::blue("*");
 		}
-		std::cout<<"\n";
+		cout<<"\n";
 	}
 }
 void sumfac(){
 	int num, i, sum = 0, f = 1, sumSquared = 0;
 	
-	std::cout<<"\n\t\t\t*** SUM OF N | SUM OF THE SQUARED OF N | FACTORIAL OF N ***";
+    cout<<"\n\t***" << dye::yellow(" SUM OF N | SUM OF THE SQUARED OF N | FACTORIAL OF N ") << "***\n" << endl;
 	return_num:
-    std::cout<<"\n\nEnter a number: ";
-	std::cin>>num;
+    cout<<dye::bright_white("Enter a number: ");
+	cin>>num;
 
     if(num) ;
-    else if(std::cin.fail()){
-        std::cin.clear(); std::cin.ignore(1024, '\n');
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, '\n');
         goto return_num;
     }
 	
 	for(i = 0; i <= num; i++){
 		sum = sum + i;
-	}std::cout<<std::endl<<"The sum of Num is: "<<sum;
+	}cout<<endl<< dye::aqua("\tThe sum of Num is: ")<<sum;
 			
 	for(i = 0; i <= num; i++){
 		sumSquared += (i*i);
-	}std::cout<<std::endl<<"The sum of the squared of Num is: "<<sumSquared;
+	}cout<<endl<< dye::aqua("\tThe sum of the squared of Num is: ") <<sumSquared;
 		
 	for(i = 1; i <= num; i++){
 		f *= i;
-	}std::cout<<std::endl<<"The factorial of Num is: "<<f;
+	}cout<<endl<< dye::aqua("\tThe factorial of Num is: ") <<f;
 	
 }
-
 void reverse(){
     int rev, n = 0, rem;
+    cout<<"\n\t***" << dye::yellow(" REVERSE ") << "***\n" << endl;
 
     return_rev:
-    std::cout << "Please enter a number you want to reverse: ";
-    std::cin >> rev;
+    cout << dye::bright_white("Please enter a number you want to reverse: ");
+    cin >> rev;
 
     if(rev) ;
-    else if(std::cin.fail()){
-        std::cin.clear(); std::cin.ignore(1024, '\n');
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, '\n');
         goto return_rev;
     }
 
@@ -69,39 +74,38 @@ void reverse(){
           n = n + rev % 10;
           rev = rev / 10;
     }
-    std::cout << "\n\t\t\t\t\tThe reverse number is: "  << n;
+    cout << dye::aqua("\n\tThe reverse number is: ") << n;
 }
-
 void multi_table(){
 	int number, product;
-    std::cout << "\n\t\t\t\t--> PRINT MULTIPLICATION TABLE OF A GIVEN NUMBER <--\n" << std::endl;
+    cout<<"\n\t***" << dye::yellow(" PRINT MULTIPLICATION TABLE OF A GIVEN NUMBER ") << "***\n" << endl;
 
     return_multi:
-    std::cout << "\tEnter a number: ";
-    std::cin >> number;
+    cout << dye::bright_white("Enter a number: ");
+    cin >> number;
 
     if(number) ;
-    else if(std::cin.fail()){
-        std::cin.clear(); std::cin.ignore(1024, '\n');
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, '\n');
         goto return_multi;
     }
-
+    cout << "\n";
     for(int i = 1; i < 11; i++){
         product = number * i;
-        std::cout << "\t" <<product << " ";
+        cout << "\t" << product << " ";
     }
 }
 void count(){
 	int number, count = 0;
-    std::cout << "\n\t\t\t\t--> COUNT THE TOTAL NUMBER OF DIGITS IN A NUMBER <--\n" << std::endl;
+    cout<<"\n\t***" << dye::yellow(" COUNT THE TOTAL NUMBER OF DIGITS IN A NUMBER ") << "***\n" << endl;
 
     return_number:
-    std::cout << "\tEnter a number: ";
-    std::cin >> number;
+    cout << dye::bright_white("Enter a number: ");
+    cin >> number;
 
     if(number) ;
-    else if(std::cin.fail()){
-        std::cin.clear(); std::cin.ignore(1024, '\n');
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, '\n');
         goto return_number;
     }
 
@@ -109,25 +113,24 @@ void count(){
         count++;
         number /= 10;
     }
-    std::cout << "\t\t" << "Total digits are: " << count;
+    cout << dye::aqua("\n\tTotal digits are: ") << count;
 }
 void fibo_terms(){
 	int n, first_term = 0, second_term = 1, count = 0;
-
-    std::cout << "\n\t\t\t\t--> DISPLAY FIBONACCI SERIES UP TO N terms <--\n" << std::endl;
+    cout<<"\n\t***" << dye::yellow(" DISPLAY FIBONACCI SERIES UP TO N terms ") << "***\n" << endl;
 
     return_fibo:
-    std::cout << "\tEnter a number of terms: ";
-    std::cin >> n;
+    cout << dye::bright_white("Enter a number of terms: ");
+    cin >> n;
 
     if(n) ;
-    else if(std::cin.fail()){
-        std::cin.clear(); std::cin.ignore(1024, '\n');
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, '\n');
         goto return_fibo;
     }
     
     while(count < n){
-        std::cout << "\t" <<first_term << " ";
+        cout << "\t" <<first_term << " ";
         int temp = first_term + second_term;
         first_term = second_term; // update
         second_term = temp;

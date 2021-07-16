@@ -1,7 +1,4 @@
 #include "color.hpp" // text color
-#include <iostream>
-#include <string>
-using namespace std;
 
 void menu(string name, string course){
     

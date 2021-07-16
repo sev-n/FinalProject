@@ -42,6 +42,7 @@
         "conditional.cpp": "c",
         "loop.cpp": "c",
         "list": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "color.hpp": "c"
     }
 }

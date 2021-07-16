@@ -1,70 +1,171 @@
-#include <iostream>
+#include "color.hpp"
+using namespace std;
 
+// college grading system need
 void grade_equi(){
-	int gpurco, gdistru, gdbms, finalgrade;
+	int gpurco, gdistru, gdbms, gnstp, gfildis, ginfom, giprog, ggepef, finalgrade;
 	
-	std::cout<<"\n\t\t\t\t\t***EQUIVALENT GRADE***";
-	std::cout<<"\n\nEnter your grade in Purposive Communication: ";
-	std::cin>>gpurco;
-	std::cout<<"Enter your grade in Discrete Structure: ";
-	std::cin>>gdistru;
-	std::cout<<"Enter your grade in Database Management: ";
-	std::cin>>gdbms;
-				
-	finalgrade = (gpurco+gdistru+gdbms)/3;
+	cout<<"\n\t***" << dye::yellow(" EQUIVALENT GRADE ") << "***\n" << endl;
+	return_purco:
+	cout<<dye::bright_white("Enter your grade in Purposive Communication: ");
+	cin>>gpurco;
+	if(gpurco) ;
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, '\n');
+        goto return_purco;
+    }
+	return_distru:
+	cout<<dye::bright_white("Enter your grade in Discrete Structure: ");
+	cin>>gdistru;
+	if(gdistru) ;
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, '\n');
+        goto return_distru;
+    }
+	return_dbms:
+	cout<<dye::bright_white("Enter your grade in Database Management: ");
+	cin>>gdbms;
+	if(gdbms) ;
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, '\n');
+        goto return_dbms;
+    }
+	return_nstp:
+	cout<<dye::bright_white("Enter your grade in National Service Training Program: ");
+	cin>>gnstp;
+	if(gnstp) ;
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, '\n');
+        goto return_nstp;
+    }
+	return_fildis:
+	cout<<dye::bright_white("Enter your grade in FILIPINO: ");
+	cin>>gfildis;
+	if(gfildis) ;
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, '\n');
+        goto return_fildis;
+    }
+	return_infom:
+	cout<<dye::bright_white("Enter your grade in INFORMATION MANAGEMENT: ");
+	cin>>ginfom;
+	if(ginfom) ;
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, '\n');
+        goto return_infom;
+    }
+	return_iprog:
+	cout<<dye::bright_white("Enter your grade in COMPUTER PROGRAMMING 2: ");
+	cin>>giprog;
+	if(giprog) ;
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, '\n');
+        goto return_iprog;
+    }
+	return_gepef:
+	cout<<dye::bright_white("Enter your grade in FITNESS EXERCISE: ");
+	cin>>ggepef;
+	if(ggepef) ;
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, '\n');
+        goto return_gepef;
+    }
+	finalgrade = (gpurco+gdistru+gdbms+gnstp+gfildis+ginfom+giprog+ggepef)/8;
 	if((finalgrade > 74) && (finalgrade < 101)){
 		if(finalgrade > 89 && finalgrade < 95){
-			std::cout<<"\nYour Final Grade is "<< finalgrade <<" and You Passed with Honors";
+			cout<<"\n\tYour" << dye::aqua(" Final Grade ") << "is "<< finalgrade <<" and You Passed with Honors";
 		}else if(finalgrade > 94 && finalgrade < 98){
-			std::cout<<"\nYour Final Grade is "<< finalgrade <<" and You Passed with High Honors";
+			cout<<"\n\tYour" << dye::aqua(" Final Grade ") << "is "<< finalgrade <<" and You Passed with high Honors";
 		}else if(finalgrade > 97 && finalgrade < 101){
-			std::cout<<"\nYour Final Grade is "<< finalgrade <<" and You Passed with Highest Honors";
+			cout<<"\n\tYour" << dye::aqua(" Final Grade ") << "is "<< finalgrade <<" and You Passed with highest Honors";
 		}else{
-			std::cout<<"\nYour Final Grade is "<<finalgrade<<" and You just Passed";
+			cout<<"\n\tYour" << dye::aqua(" Final Grade ") << "is "<< finalgrade <<" and You Passed";
 		}
 	}else if(finalgrade < 75){
-		std::cout<<"\nYour Final Grade is "<< finalgrade <<" and You Failed";
+		cout<<"\n\tYour" << dye::aqua(" Final Grade ") << "is "<< finalgrade <<" and You Failed";
 	}
-	
 }
 void temper(){
-	float temp;
+	float temp, answer;
+	int choose;
 	
-	std::cout<<"\n\t\t\t\t\t***TEMPERATURE DETECTOR***";
+	cout<<"\n\t\t\t\t      ***" << dye::yellow(" TEMPERATURE CONVERTER ") << "***\n" << endl;
+	return_home:
+	cout << dye::light_yellow("\n\t[") << dye::yellow("1") << dye::light_yellow("] ") << dye::aqua("Celsius to Fahrenheit") << 
+	dye::light_yellow("\t[") << dye::yellow("2") << dye::light_yellow("] ") << dye::aqua("Fahrenheit to Celsius") << 
+	dye::light_yellow("\t[") << dye::yellow("3") << dye::light_yellow("] ") << dye::aqua("Kelvin to Celsius\n") << endl;
+	cout << dye::light_yellow("\t[") << dye::yellow("4") << dye::light_yellow("] ") << dye::aqua("Celsius to Kelvin") << 
+	dye::light_yellow("\t\t[") << dye::yellow("5") << dye::light_yellow("] ") << dye::aqua("Fahrenheit to Kelvin") <<
+	dye::light_yellow("\t[") << dye::yellow("6") << dye::light_yellow("] ") << dye::aqua("Kelvin to Fahrenheit") << endl;
+	cout << dye::light_yellow("\n\t\t\t\t\t\t[") << dye::yellow("0") << dye::light_yellow("] ") << dye::red("Terminate") << endl;
 	
-	return_temp:
-	std::cout << "\n\nWhat is the temperature?: ";
-	std::cin >> temp;
-	
-	if(temp) ;
-    else if(std::cin.fail()){
-        std::cin.clear(); std::cin.ignore(1024, '\n');
-        goto return_temp;
+	return_chose:
+	cout << dye::bright_white("\nPlease choose: ");
+	cin >> choose;
+
+	if(choose) ;
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, '\n');
+        goto return_chose;
     }
+	if(choose){
+		if(choose == 1){
+			cout << dye::bright_white("\nEnter Celsius in digit/s: ");
+			cin >> temp;
 
-	if ( temp < 0){
-		std::cout << "\nYour temperature is " << temp << " degree celcius. IT is considered as EXTREMELY COLD.";
-	}else if ( temp >= 0 && temp <= 15 ){
-		std::cout << "\nYour temperature is " << temp << " degree celcius. IT is considered as TOO COOLD.";
-	}else if ( temp > 15 && temp <= 37 ){
-		std::cout << "\nYour temperature is " << temp << " degree celcius. Congrats! This is NORMAL.";
-	}else{
-		std::cout << "\nYour temperature is " << temp << " degree celcius. You might want to lower it because this is HOT BOI!";
-	}
+			answer = temp * 9/5 + 32;
+			cout << "\n\t" << temp << "C " << dye::aqua("is equal to ") << answer << "F\n";
+			goto return_chose;
+		}else if(choose == 2){
+			cout << dye::bright_white("\nEnter Fahrenheit in digit/s: ");
+			cin >> temp;
+
+			answer = (temp - 32) * 5/9;
+			cout << "\n\t" << temp << "F " << dye::aqua("is equal to ") << answer << "C\n";
+			goto return_chose;
+		}else if(choose == 3){
+			cout << dye::bright_white("\nEnter Kelvin in digit/s: ");
+			cin >> temp;
+
+			answer = temp - 273.15;
+			cout << "\n\t" << temp << "K " << dye::aqua("is equal to ") << answer << "C\n";
+			goto return_chose;
+		}else if(choose == 4){
+			cout << dye::bright_white("\nEnter Celsius in digit/s: ");
+			cin >> temp;
+
+			answer = temp + 273.15;
+			cout << "\n\t" << temp << "C " << dye::aqua("is equal to ") << answer << "K\n";
+			goto return_chose;
+		}else if(choose == 5){
+			cout << dye::bright_white("\nEnter Fahrenheit in digit/s: ");
+			cin >> temp;
+
+			answer = (temp + 459.67) * 5/9;
+			cout << "\n\t" << temp << "F " << dye::aqua("is equal to ") << answer << "K\n";
+			goto return_chose;
+		}else if(choose == 6){
+			cout << dye::bright_white("\nEnter Kelvin in digit/s: ");
+			cin >> temp;
+
+			answer = temp *  9/5 - 459.67;
+			cout << "\n\t" << temp << "K " << dye::aqua("is equal to ") << answer << "F\n";
+			goto return_chose;
+		}else if(choose > 6) goto return_chose;
+	}else if(choose == 0) cout << " ";
 }
-
 void work_salary(){
 	float hours, salary;
 	
-	std::cout<<"\n\t\t\t\t\t***WEEKLY SALARY***";
+	cout<<"\n\t***" << dye::yellow(" WEEKLY SALARY ") << "***\n" << endl;
 
 	return_ask:
-	std::cout<<"\n\nEnter the hours worked in a week: ";
-	std::cin>>hours;
+	cout<<dye::bright_white("Enter the hours worked in a week: ");
+	cin>>hours;
 
 	if(hours) ;
-    else if(std::cin.fail()){
-        std::cin.clear(); std::cin.ignore(1024, '\n');
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, '\n');
         goto return_ask;
     }
 		
@@ -76,105 +177,79 @@ void work_salary(){
 		salary = 18.00 * hours;
 	}
 		
-	std::cout<<"\n\n-------------------------------------------------------------------------\n";
-	std::cout<<"\t\t\t\tPAYSLIP\n\n";
-	std::cout<<std::endl<<"Hours worked : "<<hours<<" hours";
-	std::cout<<std::endl<<"Week Salary  : "<<salary<<" Php";
+	cout<<"\n\n------------------------\n";
+	cout<<dye::yellow("\tPAYSLIP\n\n");
+	cout<<endl << dye::aqua("Hours worked : ") << hours <<" hours";
+	cout<<endl << dye::aqua("Week Salary  : ") << salary << " Php";
 }
 
 void vote_reg(){
 	int age;
-	std::cout<<"\n\t\t\t\t\t***VOTER'S AGE VALIDATION***";
+
+	cout<<"\n\t***" << dye::yellow(" VOTER'S AGE VALIDATION ") << "***\n" << endl;
 	
 	return_age:
-	std::cout<<"\n\nEnter your age: ";
-	std::cin>>age;
+	cout<<dye::bright_white("Enter your age: ");
+	cin>>age;
 
 	if(age) ;
-    else if(std::cin.fail()){
-        std::cin.clear(); std::cin.ignore(1024, '\n');
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, '\n');
         goto return_age;
     }
 	
 	if(age < 18){
-		std::cout<<"\n[MINOR ALERT!!!] You are NOT eligible to vote";
+		cout<<dye::red("\n\t[MINOR ALERT!!!] ") << "You are NOT eligible to vote";
 	}else{
-		std::cout<<"\nYou are QUALIFIED to vote";
+		cout<<"\n\tYou are" << dye::aqua(" QUALIFIED ") << "to vote";
 	}
 }
 void calcu(){
 	char op;
     double num, num1;
+	cout<<"\n\t***" << dye::yellow(" SIMPLE CALCULATOR ") << "***\n" << endl;
 
-    std::cout << "\n\t\t\t\t--> SIMPLE CALCULATOR <--\n" << std::endl;
-
-    std::cout << "\t\tEnter an operator (+, -, *, /): ";
-    std::cin >> op;
+    cout << dye::bright_white("Enter an operator") << " (" << dye::yellow(" + - * / ") << "): ";
+    cin >> op;
 
 	return_xy:
-    std::cout << "\n\t\tEnter two numbers separated by space: ";
-    std::cin >> num >> num1;
+    cout << dye::bright_white("\nEnter two numbers separated by space: ");
+    cin >> num >> num1;
 
 	if(num && num1) ;
-    else if(std::cin.fail()){
-        std::cin.clear(); std::cin.ignore(1024, '\n');
+    else if(cin.fail()){
+        cin.clear(); cin.ignore(1024, '\n');
         goto return_xy;
     }
 	switch (op) {
 		case '+':
-			std::cout << "\t\t\tYou choose addtion: " << num << " + " << num1 << " = " << num + num1;
+			cout << "\n\tYou choose addtion: " << num << dye::red(" + ") << num1 << dye::red(" = ") << num + num1;
 			break;
 		case '-':
-			std::cout << "\t\t\tYou choose subtraction: " << num << " - " << num1 << " = " << num - num1;
+			cout << "\n\tYou choose subtraction: " << num << dye::red(" - ") << num1 << dye::red(" = ") << num - num1;
 			break;
 		case '*':
-			std::cout << "\t\t\tYou choose multiplication: " << num << " * " << num1 << " = " << num * num1;
+			cout << "\n\tYou choose multiplication: " << num << dye::red(" * ") << num1 << dye::red(" = ") << num * num1;
 			break;
 		case '/':
-			std::cout << "\t\t\tYou choose divition: " << num << " / " << num1 << " = " << num / num1;
+			cout << "\n\tYou choose divition: " << num << dye::red(" / ") << num1 << dye::red(" = ") << num / num1;
 			break;
 		default:
-			std::cout << "\t\t\tInvalid Operator";
+			cout << dye::red("\n\tInvalid Operator");
 			break;
 	}
 }
-
 void vowel(){
 	char ch;
 
-	std::cout << "\n\t\t\t\t--> INDENTIFY IF IT'S VOWEL OR NOT <--\n" << std::endl;
+	cout<<"\n\t***" << dye::yellow(" INDENTIFY IF IT'S VOWEL OR CONSONANT ") << "***\n" << endl;
 
-	std::cout << "\t\tEnter a Letter: ";
-   	std::cin >> ch;
+	cout << dye::bright_white("Enter a Letter: ");
+   	cin >> ch;
 
+	if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' \
+	|| ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+		cout << "\n\t" << ch << dye::aqua(" is a vowel");
+	else cout << "\n\t" <<ch << dye::aqua(" is consonant");
 
-	switch (ch) {
-		case 'A':
-		case 'a':
-			std::cout << "\n\t\t\tYour character is A and a Vowel\n";
-			break;
-
-		case 'E':
-		case 'e':
-			std::cout << "\n\t\t\tYour character is E and a Vowel\n";
-			break;
-
-		case 'I':
-		case 'i':
-			std::cout << "\n\t\t\tYour character is I and a Vowel\n";
-			break;
-
-		case 'O':
-		case 'o':
-			std::cout << "\nt\t\tYour character is O and a Vowel\n";
-			break;
-
-		case 'U':
-		case 'u':
-			std::cout << "\n\t\t\tYour character is U and a Vowel\n";
-			break;
-
-		default: std::cout << "\n\t\t\tThe value you entered is not a vowel or make sure it must valid\n";
-			break;
-   }
 }

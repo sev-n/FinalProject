@@ -1,9 +1,7 @@
-#include<iostream>
-using namespace std;
-
 void about_us(){
 
-	cout<< dye::light_blue("\n\t====================================================================================================\n\n");
+    cout << "\n\n";
+	//cout<< dye::light_blue("\n\t====================================================================================================\n\n");
     cout << R"(                 /$$$$$$$         /$$$$$$         /$$$$$$         /$$$$$$                      /$$$$$$
                 | $$__  $$       /$$__  $$       /$$__  $$       /$$__  $$                    |_  $$_/
                 | $$  \ $$      | $$  \__/      | $$  \__/      | $$  \__/                      | $$  
@@ -27,7 +25,7 @@ void about_us(){
     cout<< dye::grey("\t\t    AGE :") << dye::bright_white(" 20\t\t\t\t\t     ") << dye::grey(" AGE :") << dye::bright_white(" 19") << endl;
     cout<< dye::grey("\t\t    GNDR:") << dye::bright_white(" Male\t\t\t\t\t     ") << dye::grey(" GNDR:") << dye::bright_white(" Male")<<endl;
     cout<< dye::grey("\t\t    HBBS:") << dye::bright_white(" Online Games & Self-Study(Programming) ") << dye::grey("     HBBS:") << dye::bright_white(" Basketball & Coding")<<endl;
-    cout<< dye::grey("\t\t    ADRS:") << dye::bright_white(" San Pedro laguna\t\t\t     ") << dye::grey(" ADRS:") << dye::bright_white(" San Pedro Laguna\n\n")<<endl;
+    cout<< dye::grey("\t\t    ADRS:") << dye::bright_white(" San Pedro, laguna\t\t\t     ") << dye::grey(" ADRS:") << dye::bright_white(" San Pedro, Laguna\n\n")<<endl;
     
     cout<< dye::purple("\t   MEMBERS:\n") <<endl;
     cout<<dye::light_yellow("\t\t[") << dye::yellow("1") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("John Henry Angas\t\t\t  ") << dye::light_yellow("[") << dye::yellow("2") << dye::light_yellow("]") << dye::grey(" NAME: ") << dye::bright_white("Harold Son Enriquez")<<endl;

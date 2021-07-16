@@ -45,9 +45,9 @@ int main(){
 
                     pyra: // <---- GOTO PYRA
                     pyramid(); // <---- FUNCTION OF PYRAMID
-                    ulitloopa:
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitloopa:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -72,7 +72,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -83,9 +84,9 @@ int main(){
 
                     sumfact: // <--- GOTO SUMFACT
                     sumfac(); // <--- FUNCTION
-                    ulitloopb:
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitloopb:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -111,7 +112,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -122,9 +124,9 @@ int main(){
 
                     rev: // <--- CREATE LABEL
                     reverse(); // <--- FUNCTION OF REVERSE
-                    ulitloopc:
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitloopc:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -149,7 +151,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -160,9 +163,9 @@ int main(){
 
                     multiTable: // <--- CREATE LABEL
                     multi_table(); // <--- FUNCTION OF MultiTable
-                    ulitloopd:
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitloopd:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -187,7 +190,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -197,10 +201,10 @@ int main(){
                 }else if(letter_con == 'e' || letter_con == 'E'){
 
                     count_digit: // <--- CREATE LABEL
-                    count(); // <--- FUNCTION OF COUNT
-                    ulitloope:
+                    count(); // <--- FUNCTION OF COUNT 
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitloope:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -225,7 +229,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -236,9 +241,9 @@ int main(){
 
                     fibo: // <--- CREATE LABEL
                     fibo_terms(); // <--- FUNCTION OF FIBONACCI
-                    ulitloopf:
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitloopf:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -263,7 +268,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -274,7 +280,8 @@ int main(){
                     system("CLS");
                     goto offmenu;
                 }else if(letter_con == '1'){
-                    cout<< dye::yellow("\n\t\t\t\tTHANKYOU FOR USING THE PROGRAM HAVE A NICE DAY AHEAD!");
+                    system("CLS");
+                    exit_message();
                     exit(0);
                 }else{
                     system("CLS");
@@ -293,7 +300,7 @@ int main(){
 
             cout<< dye::light_yellow("\t  [") << dye::yellow("A") << dye::light_yellow("] ") << dye::aqua("EQUIVALENT GRADE ") << dye::light_yellow("\t\t[") << dye::yellow("B") << dye::light_yellow("] ") << dye::aqua("TEMPERATURE DETECTOR ") << 
             dye::light_yellow("\t[") << dye::yellow("C") << dye::light_yellow("] ") << dye::aqua("WEEKLY SALARY \n\n") << dye::light_yellow("\t\t[") << dye::yellow("D") << dye::light_yellow("] ") << dye::aqua("REQUIRED AGE TO VOTE ") <<
-            dye::light_yellow("\t[") << dye::yellow("E") << dye::light_yellow("] ") << dye::aqua("SIMPLE CALCULATOR ") << dye::light_yellow("\t\t[") << dye::yellow("F") << dye::light_yellow("] ") << dye::aqua("IDENTIFY VOWEL ") <<
+            dye::light_yellow("\t[") << dye::yellow("E") << dye::light_yellow("] ") << dye::aqua("SIMPLE CALCULATOR ") << dye::light_yellow("\t\t[") << dye::yellow("F") << dye::light_yellow("] ") << dye::aqua("IDENTIFY VOWEL AND CONSONANT ") <<
             dye::light_yellow("\n\n\t\t\t[") << dye::yellow("0") << dye::light_yellow("] ") << dye::red("Back to main menu ") << dye::light_yellow("\t\t[") << dye::yellow("1") << dye::light_yellow("] ") << dye::red("Exit \n\n\n");
 
             cout<< dye::bright_white("Enter letter") << dye::bright_white(" (") << dye::yellow('A') << '/' << dye::yellow('B') << '/' << dye::yellow('C') << '/' << dye::yellow('D') << '/' << dye::yellow('E') << '/' << dye::yellow('F') << '/' << dye::yellow('G') << '/' << dye::yellow('H') << dye::bright_white("): ");
@@ -304,9 +311,9 @@ int main(){
 
                     equi: // <--- goto equivalent grade
                     grade_equi(); // <--- FUNCTION OF GRADE EQUIVALENT
-                    ulitcondia:
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitcondia:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -331,7 +338,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -341,10 +349,10 @@ int main(){
                 }else if(letter_con == 'b' || letter_con == 'B'){
 
                     tmprtr: // <---- goto temperature detector
-                    temper(); // <--- FUNCTION OF TEMPERATURE DETECTOR
-                    ulitcondib:
+                    temper(); // <--- FUNCTION OF TEMPERATURE DETECTOR                    
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitcondib:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -369,7 +377,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -379,10 +388,10 @@ int main(){
                 }else if(letter_con == 'c' || letter_con == 'C'){
 
                     weeklySalary: // <--- GOTO WEEKLY SALARY
-                    work_salary(); // <----- FUNCTION OF WEEKLY SALARY
-                    ulitcondic:
+                    work_salary(); // <----- FUNCTION OF WEEKLY SALARY                    
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitcondic:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -407,7 +416,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -417,10 +427,10 @@ int main(){
                 }else if(letter_con == 'd' || letter_con == 'D'){
 
                     vote: // <--- CREATE LABEL
-                    vote_reg(); // <----- FUNCTION FOR VOTE
-                    ulitcondid:
+                    vote_reg(); // <----- FUNCTION FOR VOTE                    
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitcondid:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -445,7 +455,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -456,9 +467,9 @@ int main(){
 
                     calcu: // <--- CREATE LABEL
                     calcu(); // <----- FUNCTION FOR CALCULATOR
-                    ulitcondie:
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitcondie:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -483,7 +494,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -493,10 +505,10 @@ int main(){
                 }else if(letter_con == 'f' || letter_con == 'F'){
 
                     find_vowel: // <--- CREATE LABEL
-                    vowel(); // <----- FUNCTION FOR VOWEL
-                    ulitcondif:
+                    vowel(); // <----- FUNCTION FOR VOWEL 
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitcondif:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -521,7 +533,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -532,7 +545,8 @@ int main(){
                     system("CLS");
                     goto offmenu;
                 }else if(letter_con == '1'){
-                    cout<< dye::yellow("\n\t\t\t\tTHANKYOU FOR USING THE PROGRAM HAVE A NICE DAY AHEAD!");
+                    system("CLS");
+                    exit_message();
                     exit(0);
                 }else{
                     system("CLS");
@@ -541,7 +555,6 @@ int main(){
                 }
             }
         }
-
 //--------------------------------------------------------------------------------------------------------------------------
         else if(num == 3){
             piliArr: // <---- CREATE LABEL FOR ARRAY
@@ -550,7 +563,7 @@ int main(){
             cout<< dye::yellow("\n\t\t\t\tPROGRAMS IN ARRAY USING ONE-DIMENSION\n");
             cout<< dye::light_blue("\n\t\t===========================================================================\n\n");
             
-            cout<< dye::light_yellow("\t\t\t[") << dye::yellow("A") << dye::light_yellow("] ") << dye::aqua("FACTORIAL OF NUMBER ") << dye::light_yellow("\t[") << dye::yellow("B") << dye::light_yellow("] ") << dye::aqua("SUM OF NUMBER ") << 
+            cout<< dye::light_yellow("\t\t\t[") << dye::yellow("A") << dye::light_yellow("] ") << dye::aqua("REMOVE ELEMENT IN ARRAY ") << dye::light_yellow("\t[") << dye::yellow("B") << dye::light_yellow("] ") << dye::aqua("SUM OF NUMBER ") << 
             dye::light_yellow("\t[") << dye::yellow("C") << dye::light_yellow("] ") << dye::aqua("POSITIVE OR NEGATIVE \n\n") << dye::light_yellow("\t\t[") << dye::yellow("D") << dye::light_yellow("] ") << dye::aqua("LOWEST AND HIGHEST NUMBER ") <<
             dye::light_yellow("\t[") << dye::yellow("E") << dye::light_yellow("] ") << dye::aqua("COUNT OCCURRENCE/s ") << dye::light_yellow("\t[") << dye::yellow("F") << dye::light_yellow("] ") << dye::aqua("FIND SPECIFIC NAME ") <<
             dye::light_yellow("\n\n\t[") << dye::yellow("0") << dye::light_yellow("] ") << dye::red("Back to main menu ") << dye::light_yellow("\t\t[") << dye::yellow("1") << dye::light_yellow("] ") << dye::red("Exit \n\n\n");
@@ -560,11 +573,11 @@ int main(){
             if(letter_con){
                 if(letter_con == 'A' || letter_con == 'a'){
 
-                    arrFac: // <--- CREATE LABEL FOR FIRST PROBELM IN ARRAY
-                    FacArr(); // <--- FUNCTION OF FACTORIAL OF AN ARRAY
-                    ulitarra:
+                    arrRem: // <--- CREATE LABEL FOR FIRST PROBELM IN ARRAY
+                    remove(); // <--- FUNCTION OF FACTORIAL OF AN ARRAY                    
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitarra:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -575,7 +588,7 @@ int main(){
                     }
                     switch(conc){
                         case 1:
-                            goto arrFac;
+                            goto arrRem;
                             break;
                         case 2:
                             system("PAUSE");
@@ -589,7 +602,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -600,9 +614,10 @@ int main(){
 
                     arrSum: // <--- CREATE LABEL
                     sumofN(); // <--- FUNCTION OF SUM OF AN ARRAY
-                    ulitarrb:
+                    
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitarrb:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -627,7 +642,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -638,9 +654,10 @@ int main(){
 
                     arrposNneg: // <--- CREATE LABEL
                     posNneg(); // <--- FUNCTION OF POSTIVE OF NEGATIVE NUMBERS OF AN ARRAY
-                    ulitarrc:
+                    
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitarrc:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -665,7 +682,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -676,9 +694,10 @@ int main(){
 
                     arr_low_high: // <--- CREATE LABEL
                     low_high(); // <--- FUNCTION OF LOW/HIGH
-                    ulitarrd:
+                    
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitarrd:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -703,7 +722,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -714,9 +734,10 @@ int main(){
 
                     arr_occur: // <--- CREATE LABEL
                     occur_n(); // <--- FUNCTION OF OCCUR
-                    ulitarre:
+                    
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitarre:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -741,7 +762,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -753,9 +775,10 @@ int main(){
 
                     arr_find_name: // <--- CREATE LABEL
                     find_name(); // <--- FUNCTION OF FIND
-                    ulitarrf:
+                    
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitarrf:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -780,7 +803,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -791,7 +815,8 @@ int main(){
                     system("CLS");
                     goto offmenu;
                 }else if(letter_con == '1'){
-                    cout<< dye::yellow("\n\t\t\t\tTHANKYOU FOR USING THE PROGRAM HAVE A NICE DAY AHEAD!");
+                    system("CLS");
+                    exit_message();
                     exit(0);
                 }else{
                 system("CLS");
@@ -820,9 +845,10 @@ int main(){
 
                     arith: // <--- CREATE LABEL FOR FIRST PROBELM IN OPERATOR
                     arithmetic(); // <--- FUNCTION OF FIRST PROBLEM
-                    ulitopea:
+                    
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitopea:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -847,7 +873,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -858,9 +885,10 @@ int main(){
 
                     relational: // <--- CREATE LABEL
                     relational(); // <--- FUNCTION OF SECOND PROBLEM
-                    ulitopeb:
+                    
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitopeb:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -885,7 +913,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -896,9 +925,10 @@ int main(){
 
                     logical: // <--- CREATE LABEL
                     logical(); // <--- FUNCTION OF THIRD PROBLEM
-                    ulitopec:
+                    
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitopec:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -923,7 +953,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -934,9 +965,10 @@ int main(){
 
                     convert: // <--- CREATE LABEL
                     convert(); // <--- FUNCTION OF FOURTH PROBLEM
-                    ulitoped:
+                    
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitoped:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -961,7 +993,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -972,9 +1005,10 @@ int main(){
 
                     conversion_unit: // <--- CREATE LABEL
                     conv_unit(); // <--- FUNCTION OF FIFTH PROBLEM
-                    ulitopee:
+                    
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitopee:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -999,7 +1033,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -1010,9 +1045,10 @@ int main(){
 
                     conversion_calendar: // <--- CREATE LABEL
                     conv_calendar_date(); // <--- FUNCTION OF SIXTH PROBLEM
-                    ulitopef:
+                    
                     cout<< dye::light_yellow("\n\n[") << dye::yellow('1') << dye::light_yellow(']') << dye::red("Try again\t\t") << dye::light_yellow('[') << dye::yellow('2') << dye::light_yellow(']') << dye::red("Try another program\t\t") << dye::light_yellow('[') << dye::yellow('3') << dye::light_yellow(']') << 
                     dye::red("Back to main menu\t\t") << dye::light_yellow('[') << dye::yellow('4') << dye::light_yellow(']') << dye::red("Quit\n");
+                    ulitopef:
                     cout<< dye::bright_white("\nPick a number: ");
                     cin>>conc;
 
@@ -1037,7 +1073,8 @@ int main(){
                             goto loop;
                             break;
                         case 4:
-                            cout<< dye::yellow("\nThankyou For using the program");
+                            system("CLS");
+                            exit_message();
                             exit(0);
                             break;
                         default:
@@ -1048,7 +1085,8 @@ int main(){
                     system("CLS");
                     goto offmenu;
                 }else if(letter_con == '1'){
-                    cout<< dye::yellow("\n\t\t\t\tTHANKYOU FOR USING THE PROGRAM HAVE A NICE DAY AHEAD!");
+                    system("CLS");
+                    exit_message();
                     exit(0);
                 }else{
                     system("CLS");
@@ -1076,7 +1114,8 @@ int main(){
                     goto offmenu;
                     break;
                 case 2:
-                    cout<< dye::yellow("\n\t\t\t\tTHANKYOU FOR USING THE PROGRAM HAVE A NICE DAY AHEAD!");
+                    system("CLS");
+                    exit_message();
                     exit(0);
                     break;
                 default:
