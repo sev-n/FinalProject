@@ -1,6 +1,3 @@
-#include "color.hpp"
-using namespace std;
-
 void pyramid(){
 	int num, i, j;
 	

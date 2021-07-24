@@ -3,6 +3,7 @@
 
 
 // include all cpp files
+#include "color.hpp" // https://github.com/imfl/color-console
 #include "loop.cpp"
 #include "conditional.cpp"
 #include "mainMenu.cpp"
@@ -10,7 +11,6 @@
 #include "operator.cpp"
 #include "aboutus.cpp"
 #include "exit.cpp"
-#include "color.hpp" // https://github.com/imfl/color-console
 
 void menu(string name, string course);
 

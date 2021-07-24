@@ -43,6 +43,7 @@
         "loop.cpp": "c",
         "list": "cpp",
         "map": "cpp",
-        "color.hpp": "c"
+        "color.hpp": "c",
+        "exit.cpp": "c"
     }
 }

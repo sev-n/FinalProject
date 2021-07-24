@@ -1,6 +1,3 @@
-#include "color.hpp"
-using namespace std;
-
 // college grading system need
 void grade_equi(){
 	int gpurco, gdistru, gdbms, gnstp, gfildis, ginfom, giprog, ggepef, finalgrade;
@@ -240,15 +237,18 @@ void calcu(){
 	}
 }
 void vowel(){
-	char ch;
+	string ch;
 
 	cout<<"\n\t***" << dye::yellow(" INDENTIFY IF IT'S VOWEL OR CONSONANT ") << "***\n" << endl;
 
+	return_ch:
 	cout << dye::bright_white("Enter a Letter: ");
    	cin >> ch;
 
-	if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' \
-	|| ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+	if(ch.size() != 1) goto return_ch;
+
+	if(ch == "a" || ch == "e" || ch == "i" || ch == "o" || ch == "u" \
+	|| ch == "A" || ch == "E" || ch == "I" || ch == "O" || ch == "U")
 		cout << "\n\t" << ch << dye::aqua(" is a vowel");
 	else cout << "\n\t" <<ch << dye::aqua(" is consonant");
 
