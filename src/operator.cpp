@@ -73,7 +73,6 @@ void logical(){
         if(!(x < y) || y > x)
             cout << "\n\t!(x < y) || y < x  ->" << dye::aqua(" return the opossite if true then FALSE, if false then TRUE") << endl;
     }else if(cin.fail()){
-        //system("CLS");
         cin.clear(); cin.ignore(1024, '\n');
         goto return_xy;
     }
@@ -93,7 +92,6 @@ void convert(){
         cout << "\n\t" << php << dye::aqua(" PHP ") << "= " << to_usd << dye::aqua(" US Dollar") << endl;
         cout << "\t" << php << dye::aqua(" PHP ") << "= " << to_jpy << dye::aqua(" Japanese Yen") << endl;
     }else if(cin.fail()){
-        //system("CLS");
         cin.clear(); cin.ignore(1024, '\n');
         goto return_php;
     }
@@ -113,7 +111,6 @@ void conv_unit(){
         cout << "\n\t"<< cm << dye::aqua(" cm is equal to ") << to_mm << dye::aqua(" milimeter/s") << endl;
         cout << "\t"<< cm << dye::aqua(" cm is equal to ") << to_m << dye::aqua(" meter/s") << endl;
     }else if(cin.fail()){
-        //system("CLS");
         cin.clear(); cin.ignore(1024, '\n');
         goto return_cm;
     }
@@ -128,7 +125,6 @@ void conv_unit(){
         cout << "\n\t"<< mm << dye::aqua(" mm is equal to ") << to_cm << dye::aqua(" centimeter/s") << endl;
         cout << "\t"<< mm << dye::aqua(" mm is equal to ") << to_meter << dye::aqua(" meter/s") << endl;
     }else if(cin.fail()){
-        //system("CLS");
         cin.clear(); cin.ignore(1024, '\n');
         goto return_mm;
     }
@@ -147,7 +143,6 @@ void conv_unit(){
         goto return_m;
     }
 }
-
 void conv_calendar_date(){
     int days, month, year, num_day;
 
