@@ -6,7 +6,7 @@ void menu(string name, string course){
     cout<< dye::grey("\t\t\tNAME: ") << dye::white(name) << dye::grey("\t\t\t\tCOURSE: ") << dye::white(course);
     cout<< dye::light_blue("\n\t\t===========================================================================\n\n");
 
-    cout<<"\n\t\t " << dye::red("   WARNING") << dye::bright_white(": IF INVALID INPUT IS ENTERED THE MAIN MENU WILL JUST RELOAD\n\n");
+    cout<<"\n\t\t " << dye::red("   WARNING") << dye::bright_white(": IF INVALID INPUT IS ENTERED THE SESSION WILL JUST RELOAD\n\n");
     cout<<"\n\t\t\t\t\t\t " << dye::yellow("WELCOME!")<< "\n";
 
     cout<< dye::light_blue("\t===========================================================================================\n");

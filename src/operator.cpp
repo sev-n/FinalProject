@@ -1,3 +1,4 @@
+using namespace std;
 void arithmetic(){
     int x, y;
 
@@ -78,7 +79,7 @@ void logical(){
     }
 }
 void convert(){
-    float php, usd = 0.021, jpy = 2.25;
+    float php, usd = 0.020, jpy = 2.20;
 
     cout << "\n\t-->" << dye::yellow(" CAN CONVERT PHP TO US DOLLAR and JAPANESE YEN ") << "<--\n" << endl;
 
@@ -96,8 +97,6 @@ void convert(){
         cin.clear(); cin.ignore(1024, '\n');
         goto return_php;
     }
-
-    
 }
 void conv_unit(){
     double cm, mm, m;
@@ -144,7 +143,6 @@ void conv_unit(){
         cout << "\n\t"<< m << dye::aqua(" meter/s is equal to ") << to_centimeter << dye::aqua(" centimeter/s") << endl;
         cout << "\t"<< m << dye::aqua(" meter/s is equal to ") << to_milimeter << dye::aqua(" milimeter/s") << endl;
     }else if(cin.fail()){
-        //system("CLS");
         cin.clear(); cin.ignore(1024, '\n');
         goto return_m;
     }
@@ -167,7 +165,6 @@ void conv_calendar_date(){
         cout << dye::aqua("\tMonth/s = ") << month << endl;
         cout << dye::aqua("\tDay/s = ") << days;
     }else if(cin.fail()){
-        //system("CLS");
         cin.clear(); cin.ignore(1024, '\n');
         goto return_numday;
     }

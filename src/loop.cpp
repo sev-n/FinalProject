@@ -1,3 +1,4 @@
+using namespace std;
 void pyramid(){
 	int num, i, j;
 	

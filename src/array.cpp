@@ -1,7 +1,8 @@
 void remove(){
     int size_num, delete_n, count=0;
 
-    cout << "\n\t-->" << dye::yellow(" REMOVE ELEMENT ") << "<--\n"<< endl;
+    cout << "\n\t\t-->" << dye::yellow(" REMOVE ELEMENT FROM AN ARRAY") << "<--\n"<< endl;
+    cout << "\tIF THERE IS DUPLICATE OR SAME ELEMENT THE FIRST APPEAR AS WELL AS EQUAL WILL BE REMOVE \n" << endl;
 
     return_size:
     cout << dye::bright_white("\nEnter array size: ");
@@ -169,6 +170,7 @@ void occur_n(){
         if(myArray[i]) ;
         else if(cin.fail()){
             cin.clear(); cin.ignore(1024, '\n');
+            cout << dye::red("Invalid input") << ", Please enter again\n" << endl;
             goto return_number;
         }
     }
@@ -179,6 +181,7 @@ void occur_n(){
     if(to_search) for(int x = 0; x < 10; x++) if(myArray[x] == to_search) occur = occur + 1;
     else if(cin.fail()){
         cin.clear(); cin.ignore(1024, 'n');
+        cout << dye::red("Invalid input") << ", Please enter again\n" << endl;
         goto return_search;
     }
     cout << dye::aqua("\n\tOccurrence/s: ") << occur;
@@ -192,10 +195,12 @@ void find_name(){
     "thomas", "charles", "christopher", "daniel", "matthew", "anthony", "mark",
     "donald", "steven", "paul", "andrew", "joshua"};
 
-    cout << "\n\t-->" << dye::yellow(" DETECT NAMES WHETHER IT IS COMMON OR NOT ") << "<--\n" << endl;
+    cout << "\n\t-->" << dye::yellow(" DETECT NAMES IF IT IS COMMON OR NOT ") << "<--\n" << endl;
 
     cout << dye::bright_white("Enter your name: ");
     cin >> name_search;
+    // changed to lowercase
+    for(int i = 0; i < name_search.length(); i++) name_search[i] = tolower(name_search[i]);
 
     for(int x = 0; x != 20; x++){
         if(common_names[x] == name_search){
@@ -212,6 +217,6 @@ void find_name(){
     for(int i = 0; i < 20; i++){
         cout << "\t";
         cout << common_names[i] << "";
-        if((i + 1) % 5 == 0) cout << endl;
+        if((i + 1) % 5 == 0) cout << endl; // printing 5 names per row
     }
 }

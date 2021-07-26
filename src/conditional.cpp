@@ -1,3 +1,4 @@
+using namespace std;
 // college grading system need
 void grade_equi(){
 	int gpurco, gdistru, gdbms, gnstp, gfildis, ginfom, giprog, ggepef, finalgrade;
