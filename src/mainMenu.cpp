@@ -1,29 +1,41 @@
-#include "color.hpp" // text color
-
 void menu(string name, string course){
     
-    cout<< dye::light_blue("\t\t===========================================================================\n");
-    cout<< dye::grey("\t\t\tNAME: ") << dye::white(name) << dye::grey("\t\t\t\tCOURSE: ") << dye::white(course);
-    cout<< dye::light_blue("\n\t\t===========================================================================\n\n");
+    cout<< "\t\t===========================================================================\n";
+    cout<< "\t\t\tNAME: " << name << "\t\t\t\tCOURSE: " << course;
+    cout<< "\n\t\t===========================================================================\n\n";
 
-    cout<<"\n\t " << dye::red("WARNING") << dye::bright_white(": IF INVALID INPUT IS ENTERED THE SESSION WILL JUST RELOAD OR YOU NEED TO ENTER AGAIN\n\n");
-    cout<<"\n\t\t\t\t\t\t " << dye::yellow("WELCOME!")<< "\n";
+    cout<< "\n\t WARNING: IF INVALID INPUT IS ENTERED THE SESSION WILL JUST RELOAD OR YOU NEED TO ENTER AGAIN\n\n";
+    cout<< "\n\t\t\t\t\t\t WELCOME!\n";
 
-    cout<< dye::light_blue("\t===========================================================================================\n");
-    cout<< dye::light_blue("\t||---------------------*************") << dye::yellow("CHOOSE ONE TOPIC") << dye::light_blue("**************-----------------------||\n");
-    cout<< dye::light_blue("\t||                                                                                       ||\n");
-    cout<< dye::light_blue("\t||                                                                                       ||\n");
-    cout<< dye::light_blue("\t||                                                                                       ||\n");
-    cout<< dye::light_blue("\t||") << dye::bright_white("\t\t\t\t\t    | \t\t\t\t\t\t ") << dye::light_blue("||\n");
-    cout<< dye::light_blue("\t||\t\t\t     ") << dye::light_yellow("[") << dye::yellow("1") << dye::light_yellow("] ") << dye::aqua("LOOPING ") << dye::bright_white("   |\t ") << dye::light_yellow("[") << dye::yellow("2") << dye::light_yellow("] ") << dye::aqua("CONDITIONAL\t\t\t ") << dye::light_blue("||\n");
-    cout<< dye::light_blue("\t||") << dye::bright_white(" \t\t       _____________________|_____________________\t\t\t ") << dye::light_blue("||\n");
-    cout<< dye::light_blue("\t||") << dye::bright_white("\t\t\t\t\t    | \t\t\t\t\t\t ") << dye::light_blue("||\n");
-    cout<< dye::light_blue("\t||\t\t\t     ") << dye::light_yellow("[") << dye::yellow("3") << dye::light_yellow("] ") << dye::aqua("ARRAY\t ") << dye::bright_white("   |\t ")<< dye::light_yellow("[") << dye::yellow("4") << dye::light_yellow("] ") << dye::aqua("SEQUENCE STRUCTURE\t\t\t ") << dye::light_blue("||\n");
-    cout<< dye::light_blue("\t||") << dye::bright_white("\t\t\t\t\t    | \t\t\t\t\t\t ") << dye::light_blue("||\n");
-    cout<< dye::light_blue("\t||                                                                                       ||\n");
-    cout<< dye::light_blue("\t||\t\t\t\t      ") << dye::light_yellow("[") << dye::yellow("5") << dye::light_yellow("] ") << dye::aqua("About Us\t\t\t\t\t ") << dye::light_blue("||\n");
-    cout<< dye::light_blue("\t||                                                                                       ||\n");
-    cout<< dye::light_blue("\t||---------------------*******************************************-----------------------||\n");
-    cout<< dye::light_blue("\t===========================================================================================\n");
+    cout<< "\t===========================================================================================\n";
+    cout<< "\t||---------------------*************CHOOSE ONE TOPIC**************-----------------------||\n";
+    cout<< "\t||                                                                                       ||\n";
+    cout<< "\t||                                                                                       ||\n";
+    cout<< "\t||                                                                                       ||\n";
+    cout<< "\t||\t\t\t\t\t    | \t\t\t\t\t\t ||\n";
+    cout<< "\t||\t\t\t     [1] LOOPING    |\t [2] CONDITIONAL\t\t\t ||\n";
+    cout<< "\t|| \t\t       _____________________|_____________________\t\t\t ||\n";
+    cout<< "\t||\t\t\t\t\t    | \t\t\t\t\t\t ||\n";
+    cout<< "\t||\t\t\t     [3] ARRAY\t    |\t [4] SEQUENCE STRUCTURE\t\t\t ||\n";
+    cout<< "\t||\t\t\t\t\t    | \t\t\t\t\t\t ||\n";
+    cout<< "\t||                                                                                       ||\n";
+    cout<< "\t||\t\t\t\t      [5] About Us\t\t\t\t\t ||\n";
+    cout<< "\t||                                                                                       ||\n";
+    cout<< "\t||---------------------*******************************************-----------------------||\n";
+    cout<< "\t===========================================================================================\n";
 
+}
+void exit_message(){
+   cout << "\n\n";
+   cout << R"(         $$$$$$$$\ $$\                           $$\
+         \__$$  __|$$ |                          $$ |
+            $$ |   $$$$$$$\   $$$$$$\  $$$$$$$\  $$ |  $$\       $$\   $$\  $$$$$$\  $$\   $$\
+            $$ |   $$  __$$\  \____$$\ $$  __$$\ $$ | $$  |      $$ |  $$ |$$  __$$\ $$ |  $$ |
+            $$ |   $$ |  $$ | $$$$$$$ |$$ |  $$ |$$$$$$  /       $$ |  $$ |$$ /  $$ |$$ |  $$ |
+            $$ |   $$ |  $$ |$$  __$$ |$$ |  $$ |$$  _$$<        $$ |  $$ |$$ |  $$ |$$ |  $$ |
+            $$ |   $$ |  $$ |\$$$$$$$ |$$ |  $$ |$$ | \$$\       \$$$$$$$ |\$$$$$$  |\$$$$$$  |
+            \__|   \__|  \__| \_______|\__|  \__|\__|  \__|       \____$$ | \______/  \______/
+                                                                 $$\   $$ |
+                                                                 \$$$$$$  |
+                                                                  \______/     )" << endl;
 }

@@ -1,11 +1,11 @@
 void remove(){
     int size_num, delete_n, count=0;
 
-    cout << "\n\t\t-->" << dye::yellow(" REMOVE ELEMENT FROM AN ARRAY") << "<--\n"<< endl;
+    cout << "\n\t\t--> REMOVE ELEMENT FROM AN ARRAY <--\n"<< endl;
     cout << "\tIF THERE IS DUPLICATE OR SAME ELEMENT, THE FIRST APPEAR AS WELL AS EQUAL WILL BE REMOVE \n" << endl;
 
     return_size:
-    cout << dye::bright_white("\nEnter array size: ");
+    cout << "\nEnter array size: ";
     cin >> size_num;
 
     if(size_num) ;
@@ -17,19 +17,19 @@ void remove(){
     int arr[size_num];
 
     return_int:
-    cout << dye::bright_white("\nEnter array elements\n");
+    cout << "\nEnter array elements\n";
     for(int i = 0; i < size_num; i++){
-        cout << dye::grey(">> ");
+        cout << ">> ";
         cin >> arr[i];
         if(arr[i]) ;
         else if(cin.fail()){
             cin.clear(); cin.ignore(1024, '\n');
-            cout << dye::red("Invalid input") << ", Please enter again\n" << endl;
+            cout << "Invalid input, Please enter again\n" << endl;
             goto return_int;
         }
     }
     return_del:
-    cout << dye::bright_white("Enter element to be delete: ");
+    cout << "Enter element to be delete: ";
     cin >> delete_n;
 
     if(delete_n) ;
@@ -46,20 +46,20 @@ void remove(){
             break;
         }
     }
-    if(count == 0) cout << dye::aqua("\n\tElement not found\n");
+    if(count == 0) cout << "\n\tElement not found\n";
     else{
-        cout << dye::aqua("\n\tUpdated array ") << dye::light_blue(">> ");
+        cout << "\n\tUpdated array >> ";
         for(int i = 0; i < (size_num-1); i++) cout << arr[i] << " ";
     }
 }
 void sumofN(){
     int number, sum = 0;
 
-    cout << "\n\t-->" << dye::yellow(" SUM OF NUMBERS IN ARRAY ") << "<--\n" << endl;
-    cout << "\n\tTHE " << dye::red("INPUTTED") << " VALUE WILL REPEAT IF YOU ENTERE INVALID VALUES" << endl;
+    cout << "\n\t--> SUM OF NUMBERS IN ARRAY <--\n" << endl;
+    cout << "\n\tTHE INPUTTED VALUE WILL REPEAT IF YOU ENTERE INVALID VALUES" << endl;
 
     return_number:
-    cout << dye::bright_white("\nEnter a size in number: ");
+    cout << "\nEnter a size in number: ";
     cin >> number;
 
     if(number) ;
@@ -71,51 +71,51 @@ void sumofN(){
     int array[number];
     
     return_int:
-    cout << dye::bright_white("\nEnter a integers\n");
+    cout << "\nEnter a integers\n";
     for(int i = 0; i < number; i++){
-        cout << dye::grey(">> ");
+        cout << ">> ";
         cin >> array[i];
         if(array[i]) ;
         else if(cin.fail()){
             cin.clear(); cin.ignore(1024, '\n');
-            cout << dye::red("Invalid input") << ", Please enter again\n" << endl;
+            cout << "Invalid input, Please enter again\n" << endl;
             goto return_int;
         }
     }
     for(int j = 0; j < number; j++) sum += array[j];
-    cout << dye::aqua("\tThe sum of N is") << ": " << sum;
+    cout << "\tThe sum of N is: " << sum;
 }
 void posNneg(){
     int number[5];
     
-    cout << "\n\t-->" << dye::yellow(" IDENTIFY IF POSITIVE OR NEGATIVE NUMBERS ") << "<--\n" << endl;
-    cout << "\n\tTHE " << dye::red("INPUTTED") << " VALUE WILL REPEAT IF YOU ENTERE INVALID VALUES" << endl;
+    cout << "\n\t--> IDENTIFY IF POSITIVE OR NEGATIVE NUMBERS <--\n" << endl;
+    cout << "\n\tTHE INPUTTED VALUE WILL REPEAT IF YOU ENTERE INVALID VALUES" << endl;
 
     return_arr:
-    cout << dye::bright_white("\nEnter a Five Number, Must be Integer\n");
+    cout << "\nEnter a Five Number, Must be Integer\n";
     for(int i = 0; i < 5; i++){
-        cout << dye::grey(">> ");
+        cout << ">> ";
         cin >> number[i];
         if(number[i]) ;
         else if(cin.fail()){
             cin.clear(); cin.ignore(1024, '\n');
-            cout << dye::red("Invalid input") << ", Please enter again\n" << endl;
+            cout << "Invalid input, Please enter again\n" << endl;
             goto return_arr;
         }
     }
-    cout << dye::aqua("\n\tPositive Number/s: ");
+    cout << "\n\tPositive Number/s: ";
     for(int j = 0; j < 5; j++) if(number[j] >= 0) cout << " " << number[j];
-    cout << dye::aqua("\n\tNegative Number/s: ");
+    cout << "\n\tNegative Number/s: ";
     for(int x = 0; x < 5; x++) if(number[x] < 0) cout << " " << number[x];
 }
 void low_high(){
     int number;
 
-    cout << "\n\t-->" << dye::yellow(" FIND LOWEST AND HIGHEST NUMBER ") << "<--\n" << endl;
-    cout << "\n\tTHE " << dye::red("INPUTTED") << " VALUE WILL REPEAT IF YOU ENTERE INVALID VALUES" << endl;
+    cout << "\n\t--> FIND LOWEST AND HIGHEST NUMBER <--\n" << endl;
+    cout << "\n\tTHE INPUTTED VALUE WILL REPEAT IF YOU ENTERE INVALID VALUES" << endl;
 
     return_number:
-    cout << dye::bright_white("\nEnter array size: ");
+    cout << "\nEnter array size: ";
     cin >> number;
 
     if(number) ;
@@ -128,50 +128,50 @@ void low_high(){
     return_arr:
     cout << "Enter a number\n";
     for(int i = 0; i < number; i++){
-        cout << dye::grey(">> ");
+        cout << ">> ";
         cin >> arr[i];
         if(arr[i]) ;
         else if(cin.fail()){
             cin.clear(); cin.ignore(1024, '\n');
-            cout << dye::red("Invalid input") << ", Please enter again\n" << endl;
+            cout << "Invalid input, Please enter again\n" << endl;
             goto return_arr;
         }
     }
     for(int i = 1; i < number; i++) if(arr[0] > arr[i]) arr[0] = arr[i]; //first element = lowest number
-    cout << dye::aqua("\n\tThe lowest value is ") << arr[0] << endl;
+    cout << "\n\tThe lowest value is " << arr[0] << endl;
 
     for(int j = 1; j < number; j++) if(arr[0] < arr[j]) arr[0] = arr[j]; //first element = highest number
-    cout << dye::aqua("\tThe highest value is ") << arr[0] << endl;
+    cout << "\tThe highest value is " << arr[0] << endl;
 }
 void occur_n(){
     int number, to_search, occur = 0, myArray[10];
 
-    cout << "\n\t-->" << dye::yellow(" COUNT OCCURRENCE/S OF N ") << "<--\n" << endl;
-    cout << "\n\tTHE " << dye::red("INPUTTED") << " VALUE WILL REPEAT IF YOU ENTERE INVALID VALUES" << endl;
+    cout << "\n\t--> COUNT OCCURRENCE/S OF N <--\n" << endl;
+    cout << "\n\tTHE INPUTTED VALUE WILL REPEAT IF YOU ENTERE INVALID VALUES" << endl;
 
     return_number:
-    cout << dye::bright_white("\nEnter 10 numbers\n");
+    cout << "\nEnter 10 numbers\n";
     for(int i = 0; i < 10; ++i){
-        cout << dye::grey(">> ");
+        cout << ">> ";
         cin >> myArray[i];
         if(myArray[i]) ;
         else if(cin.fail()){
             cin.clear(); cin.ignore(1024, '\n');
-            cout << dye::red("Invalid input") << ", Please enter again\n" << endl;
+            cout << "Invalid input, Please enter again\n" << endl;
             goto return_number;
         }
     }
     return_search:
-    cout << dye::bright_white("Enter a number to search: ");
+    cout << "Enter a number to search: ";
     cin >> to_search;
 
     if(to_search) for(int x = 0; x < 10; x++) if(myArray[x] == to_search) occur = occur + 1;
     else if(cin.fail()){
         cin.clear(); cin.ignore(1024, 'n');
-        cout << dye::red("Invalid input") << ", Please enter again\n" << endl;
+        cout << "Invalid input, Please enter again\n" << endl;
         goto return_search;
     }
-    cout << dye::aqua("\n\tOccurrence/s: ") << occur;
+    cout << "\n\tOccurrence/s: " << occur;
 }
 void find_name(){
     bool is_found = false;
@@ -181,9 +181,9 @@ void find_name(){
     "thomas", "charles", "christopher", "daniel", "matthew", "anthony", "mark",
     "donald", "steven", "paul", "andrew", "joshua"};
 
-    cout << "\n\t-->" << dye::yellow(" DETECT NAMES IF IT IS COMMON OR NOT ") << "<--\n" << endl;
+    cout << "\n\t--> DETECT NAMES IF IT IS COMMON OR NOT <--\n" << endl;
 
-    cout << dye::bright_white("Enter your name: ");
+    cout << "Enter your name: ";
     cin >> name_search;
     // change to lowercase
     for(int i = 0; i < name_search.length(); i++) name_search[i] = tolower(name_search[i]);
@@ -194,10 +194,10 @@ void find_name(){
             break;
         }else is_found = false;
     }
-    if(is_found == true) cout << dye::aqua("\n\tYour name: ") << name_search << " is in the top 20 common names of all time" << endl;
-    else cout << dye::aqua("\n\t\tYour name: ") << name_search << " is not on the list" << endl;
+    if(is_found == true) cout << "\n\tYour name: " << name_search << " is in the top 20 common names of all time" << endl;
+    else cout << "\n\t\tYour name: " << name_search << " is not on the list" << endl;
 
-    cout << dye::light_blue("\n\tTOP 20 COMMON NAMES\n") << endl;
+    cout << "\n\tTOP 20 COMMON NAMES\n" << endl;
     for(int i = 0; i < 20; i++){
         cout << "\t";
         cout << common_names[i] << "";
