@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <sstream> // for converting string to integers
+#include <sstream> // for converting string to integer
 #include "src/functions.h"
 using namespace std;
 
