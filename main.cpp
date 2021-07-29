@@ -299,7 +299,7 @@ int main(){
             cout << dye::yellow("\n\t\t\t\t    PROGRAMS IN CONDITIONAL STATEMENT\n");
             cout << dye::light_blue("\n\t\t===========================================================================\n\n");
 
-            cout << dye::light_yellow("\t  [") << dye::yellow("A") << dye::light_yellow("] ") << dye::aqua("EQUIVALENT GRADE ") << dye::light_yellow("\t\t[") << dye::yellow("B") << dye::light_yellow("] ") << dye::aqua("TEMPERATURE DETECTOR ") <<
+            cout << dye::light_yellow("\t  [") << dye::yellow("A") << dye::light_yellow("] ") << dye::aqua("EQUIVALENT GRADE ") << dye::light_yellow("\t\t[") << dye::yellow("B") << dye::light_yellow("] ") << dye::aqua("TEMPERATURE CONVERTER ") <<
             dye::light_yellow("\t[") << dye::yellow("C") << dye::light_yellow("] ") << dye::aqua("WEEKLY SALARY \n\n") << dye::light_yellow("\t\t[") << dye::yellow("D") << dye::light_yellow("] ") << dye::aqua("REQUIRED AGE TO VOTE ") <<
             dye::light_yellow("\t[") << dye::yellow("E") << dye::light_yellow("] ") << dye::aqua("SIMPLE CALCULATOR ") << dye::light_yellow("\t\t[") << dye::yellow("F") << dye::light_yellow("] ") << dye::aqua("IDENTIFY VOWEL AND CONSONANT ") <<
             dye::light_yellow("\n\n\t\t\t[") << dye::yellow("0") << dye::light_yellow("] ") << dye::red("Back to main menu ") << dye::light_yellow("\t\t[") << dye::yellow("1") << dye::light_yellow("] ") << dye::red("Exit \n\n\n");
