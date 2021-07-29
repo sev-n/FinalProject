@@ -36,7 +36,7 @@ int main(){
             dye::light_yellow("\n\n\t\t\t[") << dye::yellow("0") << dye::light_yellow("] ") << dye::red("Back to main menu ") << dye::light_yellow("\t\t[") << dye::yellow("1") << dye::light_yellow("] ") << dye::red("Exit \n\n\n");
 
             cout << dye::bright_white("Enter letter") << dye::bright_white(" (") << dye::yellow('A') << '/' << dye::yellow('B') << '/' << dye::yellow('C') << '/' <<
-            dye::yellow('D') << '/' << dye::yellow('E') << '/' << dye::yellow('F') << '/' << dye::yellow('G') << '/' << dye::yellow('H') << dye::bright_white("): ");
+            dye::yellow('D') << '/' << dye::yellow('E') << '/' << dye::yellow('F') << '/' << dye::yellow('0') << '/' << dye::yellow('1') << dye::bright_white("): ");
             cin >> letter_con;
             
             if(letter_con.size() != 1){
@@ -304,7 +304,7 @@ int main(){
             dye::light_yellow("\t[") << dye::yellow("E") << dye::light_yellow("] ") << dye::aqua("SIMPLE CALCULATOR ") << dye::light_yellow("\t\t[") << dye::yellow("F") << dye::light_yellow("] ") << dye::aqua("IDENTIFY VOWEL AND CONSONANT ") <<
             dye::light_yellow("\n\n\t\t\t[") << dye::yellow("0") << dye::light_yellow("] ") << dye::red("Back to main menu ") << dye::light_yellow("\t\t[") << dye::yellow("1") << dye::light_yellow("] ") << dye::red("Exit \n\n\n");
             
-            cout << dye::bright_white("Enter letter") << dye::bright_white(" (") << dye::yellow('A') << '/' << dye::yellow('B') << '/' << dye::yellow('C') << '/' << dye::yellow('D') << '/' << dye::yellow('E') << '/' << dye::yellow('F') << '/' << dye::yellow('G') << '/' << dye::yellow('H') << dye::bright_white("): ");
+            cout << dye::bright_white("Enter letter") << dye::bright_white(" (") << dye::yellow('A') << '/' << dye::yellow('B') << '/' << dye::yellow('C') << '/' << dye::yellow('D') << '/' << dye::yellow('E') << '/' << dye::yellow('F') << '/' << dye::yellow('0') << '/' << dye::yellow('1') << dye::bright_white("): ");
             cin >> letter_con;
             if(letter_con.size() != 1){
                 system("CLS");
@@ -571,7 +571,7 @@ int main(){
             dye::light_yellow("\t[") << dye::yellow("E") << dye::light_yellow("] ") << dye::aqua("COUNT OCCURRENCE/s ") << dye::light_yellow("\t[") << dye::yellow("F") << dye::light_yellow("] ") << dye::aqua("FIND SPECIFIC NAME ") <<
             dye::light_yellow("\n\n\t[") << dye::yellow("0") << dye::light_yellow("] ") << dye::red("Back to main menu ") << dye::light_yellow("\t\t[") << dye::yellow("1") << dye::light_yellow("] ") << dye::red("Exit \n\n\n");
 
-            cout << dye::bright_white("Enter letter") << dye::bright_white(" (") << dye::yellow('A') << '/' << dye::yellow('B') << '/' << dye::yellow('C') << '/' << dye::yellow('D') << '/' << dye::yellow('E') << '/' << dye::yellow('F') << '/' << dye::yellow('G') << '/' << dye::yellow('H') << dye::bright_white("): ");
+            cout << dye::bright_white("Enter letter") << dye::bright_white(" (") << dye::yellow('A') << '/' << dye::yellow('B') << '/' << dye::yellow('C') << '/' << dye::yellow('D') << '/' << dye::yellow('E') << '/' << dye::yellow('F') << '/' << dye::yellow('0') << '/' << dye::yellow('1') << dye::bright_white("): ");
             cin >> letter_con;
             if(letter_con.size() != 1){
                 system("CLS");
@@ -836,7 +836,7 @@ int main(){
             dye::light_yellow("\t  [") << dye::yellow("E") << dye::light_yellow("] ") << dye::aqua("METRIC CONVERSION ") << dye::light_yellow("\t  [") << dye::yellow("F") << dye::light_yellow("] ") << dye::aqua("CALENDAR DATE CONVERTER ") <<
             dye::light_yellow("\n\n\t[") << dye::yellow("0") << dye::light_yellow("] ") << dye::red("Back to main menu ") << dye::light_yellow("\t  [") << dye::yellow("1") << dye::light_yellow("] ") << dye::red("Exit \n\n\n");
 
-            cout << dye::bright_white("Enter letter") << dye::bright_white(" (") << dye::yellow('A') << '/' << dye::yellow('B') << '/' << dye::yellow('C') << '/' << dye::yellow('D') << '/' << dye::yellow('E') << '/' << dye::yellow('F') << '/' << dye::yellow('G') << '/' << dye::yellow('H') << dye::bright_white("): ");
+            cout << dye::bright_white("Enter letter") << dye::bright_white(" (") << dye::yellow('A') << '/' << dye::yellow('B') << '/' << dye::yellow('C') << '/' << dye::yellow('D') << '/' << dye::yellow('E') << '/' << dye::yellow('F') << '/' << dye::yellow('0') << '/' << dye::yellow('1') << dye::bright_white("): ");
             cin >> letter_con;
             if(letter_con.size() != 1){
                 system("CLS");
