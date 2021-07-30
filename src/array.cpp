@@ -176,15 +176,21 @@ void occur_n(){
 void find_name(){
     bool is_found = false;
     string name_search;
+    int number = 0;
 
     string common_names[20] = {"james", "robert", "john", "michael", "william", "david", "richard", "joseph",
     "thomas", "charles", "christopher", "daniel", "matthew", "anthony", "mark",
     "donald", "steven", "paul", "andrew", "joshua"};
 
     cout << "\n\t-->" << dye::yellow(" DETECT NAMES IF IT IS COMMON OR NOT ") << "<--\n" << endl;
-
+    return_name:
     cout << dye::bright_white("Enter your name: ");
     cin >> name_search;
+
+    stringstream geek(name_search);
+    geek >> number;
+
+    if(number) goto return_name;
     // change to lowercase
     for(int i = 0; i < name_search.length(); i++) name_search[i] = tolower(name_search[i]);
 
